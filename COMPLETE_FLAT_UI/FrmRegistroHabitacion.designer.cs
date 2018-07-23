@@ -1,6 +1,6 @@
 ﻿namespace COMPLETE_FLAT_UI
 {
-    partial class FrmRegistroHuespedes
+    partial class FrmRegistroHabitacion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroHabitacion));
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtapellido = new System.Windows.Forms.TextBox();
             this.txtdireccion = new System.Windows.Forms.TextBox();
-            this.txttelefono = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +54,7 @@
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(769, 47);
+            this.BarraTitulo.Size = new System.Drawing.Size(900, 47);
             this.BarraTitulo.TabIndex = 2;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
@@ -64,12 +63,12 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(299, 12);
+            this.label6.Location = new System.Drawing.Point(354, 11);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(199, 21);
+            this.label6.Size = new System.Drawing.Size(217, 21);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Registro de huespedes";
+            this.label6.Text = "Registro de habitaciones";
             // 
             // BtnCerrar
             // 
@@ -78,7 +77,7 @@
             this.BtnCerrar.FlatAppearance.BorderSize = 0;
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
-            this.BtnCerrar.Location = new System.Drawing.Point(719, 0);
+            this.BtnCerrar.Location = new System.Drawing.Point(850, 0);
             this.BtnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(51, 47);
@@ -95,32 +94,15 @@
             this.txtnombre.Size = new System.Drawing.Size(296, 26);
             this.txtnombre.TabIndex = 3;
             // 
-            // txtapellido
-            // 
-            this.txtapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapellido.Location = new System.Drawing.Point(224, 133);
-            this.txtapellido.Margin = new System.Windows.Forms.Padding(4);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(296, 26);
-            this.txtapellido.TabIndex = 4;
-            // 
             // txtdireccion
             // 
             this.txtdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdireccion.Location = new System.Drawing.Point(224, 177);
+            this.txtdireccion.Location = new System.Drawing.Point(224, 176);
             this.txtdireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdireccion.Multiline = true;
             this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(296, 26);
+            this.txtdireccion.Size = new System.Drawing.Size(296, 139);
             this.txtdireccion.TabIndex = 5;
-            // 
-            // txttelefono
-            // 
-            this.txttelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefono.Location = new System.Drawing.Point(224, 220);
-            this.txttelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(296, 26);
-            this.txttelefono.TabIndex = 6;
             // 
             // label2
             // 
@@ -130,9 +112,9 @@
             this.label2.Location = new System.Drawing.Point(37, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 21);
+            this.label2.Size = new System.Drawing.Size(77, 21);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Nombres:";
+            this.label2.Text = "Código:";
             // 
             // label1
             // 
@@ -143,9 +125,9 @@
             this.label1.Location = new System.Drawing.Point(37, 132);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 21);
+            this.label1.Size = new System.Drawing.Size(131, 21);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Apellido paterno:";
+            this.label1.Text = "Disponibilidad:";
             // 
             // label3
             // 
@@ -156,21 +138,9 @@
             this.label3.Location = new System.Drawing.Point(37, 176);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 21);
+            this.label3.Size = new System.Drawing.Size(82, 21);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Apellido materno:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(37, 222);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 21);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "C.I.";
+            this.label3.Text = "Detalles:";
             // 
             // button1
             // 
@@ -179,10 +149,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(252, 277);
+            this.button1.Location = new System.Drawing.Point(224, 359);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 43);
+            this.button1.Size = new System.Drawing.Size(205, 43);
             this.button1.TabIndex = 11;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -194,10 +164,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(426, 277);
+            this.btnCancelar.Location = new System.Drawing.Point(475, 359);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(133, 43);
+            this.btnCancelar.Size = new System.Drawing.Size(221, 43);
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -205,35 +175,44 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::COMPLETE_FLAT_UI.Properties.Resources.icono_cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(554, 81);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(608, 92);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 188);
+            this.pictureBox1.Size = new System.Drawing.Size(236, 235);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmRegistroHuesped
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Disponible",
+            "Ocupado"});
+            this.comboBox1.Location = new System.Drawing.Point(224, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(296, 24);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // FrmRegistroHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 353);
+            this.ClientSize = new System.Drawing.Size(900, 430);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtdireccion);
-            this.Controls.Add(this.txtapellido);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmRegistroHuesped";
+            this.Name = "FrmRegistroHabitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMantCliente";
             this.Load += new System.EventHandler(this.FormMantCliente_Load);
@@ -252,15 +231,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCancelar;
         public System.Windows.Forms.TextBox txtnombre;
-        public System.Windows.Forms.TextBox txtapellido;
         public System.Windows.Forms.TextBox txtdireccion;
-        public System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

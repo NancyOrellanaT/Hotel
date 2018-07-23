@@ -72,17 +72,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHabitacion.Designer.cs">
+      <DependentUpon>FrmHabitacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmIniciarSesion.designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVacio.cs">
+    <Compile Include="FrmRegistroHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVacio.Designer.cs">
-      <DependentUpon>FrmVacio.cs</DependentUpon>
+    <Compile Include="FrmRegistroHabitacion.designer.cs">
+      <DependentUpon>FrmRegistroHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsignacionHuespedHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignacionHuespedHabitacion.Designer.cs">
+      <DependentUpon>FrmAsignacionHuespedHabitacion.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListaClientes.cs">
       <SubType>Form</SubType>
@@ -122,11 +134,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHabitacion.resx">
+      <DependentUpon>FrmHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVacio.resx">
-      <DependentUpon>FrmVacio.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistroHabitacion.resx">
+      <DependentUpon>FrmRegistroHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsignacionHuespedHabitacion.resx">
+      <DependentUpon>FrmAsignacionHuespedHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaClientes.resx">
       <DependentUpon>FormListaClientes.cs</DependentUpon>

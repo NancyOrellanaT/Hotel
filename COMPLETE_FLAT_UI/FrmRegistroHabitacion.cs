@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace COMPLETE_FLAT_UI
 {
-    public partial class FrmRegistroHuespedes : Form
+    public partial class FrmRegistroHabitacion : Form
     {
-        public FrmRegistroHuespedes()
+        public FrmRegistroHabitacion()
         {
             InitializeComponent();
         }

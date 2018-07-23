@@ -57,6 +57,8 @@
             this.tmMostrarMenu = new System.Windows.Forms.Timer(this.components);
             this.tmOcultarMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.btnReporte = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1ContenedorPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -68,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1ContenedorPrincipal
@@ -173,6 +176,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelMenu.Controls.Add(this.pictureBox3);
+            this.panelMenu.Controls.Add(this.btnReporte);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.pictureBox4);
@@ -193,10 +198,10 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(12, 628);
+            this.btnSalir.Location = new System.Drawing.Point(12, 622);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(57, 46);
+            this.btnSalir.Size = new System.Drawing.Size(62, 52);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnSalir.TabIndex = 13;
             this.btnSalir.TabStop = false;
@@ -219,10 +224,10 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 212);
+            this.pictureBox4.Location = new System.Drawing.Point(-7, 212);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(3, 53);
+            this.pictureBox4.Size = new System.Drawing.Size(10, 65);
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
@@ -236,12 +241,12 @@
             this.btnAsignacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsignacion.ForeColor = System.Drawing.Color.White;
             this.btnAsignacion.Image = ((System.Drawing.Image)(resources.GetObject("btnAsignacion.Image")));
-            this.btnAsignacion.Location = new System.Drawing.Point(0, 212);
+            this.btnAsignacion.Location = new System.Drawing.Point(-8, 212);
             this.btnAsignacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnAsignacion.Name = "btnAsignacion";
-            this.btnAsignacion.Size = new System.Drawing.Size(307, 61);
+            this.btnAsignacion.Size = new System.Drawing.Size(301, 61);
             this.btnAsignacion.TabIndex = 4;
-            this.btnAsignacion.Text = "       Asignación de\r\n       habitaciones";
+            this.btnAsignacion.Text = "      Asignación de\r\n       habitaciones";
             this.btnAsignacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAsignacion.UseVisualStyleBackColor = true;
             this.btnAsignacion.Click += new System.EventHandler(this.btnMembresia_Click);
@@ -252,7 +257,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 155);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(3, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(4, 49);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -266,10 +271,10 @@
             this.btnHabitaciones.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHabitaciones.ForeColor = System.Drawing.Color.White;
             this.btnHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnHabitaciones.Image")));
-            this.btnHabitaciones.Location = new System.Drawing.Point(0, 155);
+            this.btnHabitaciones.Location = new System.Drawing.Point(-12, 155);
             this.btnHabitaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnHabitaciones.Name = "btnHabitaciones";
-            this.btnHabitaciones.Size = new System.Drawing.Size(307, 49);
+            this.btnHabitaciones.Size = new System.Drawing.Size(315, 49);
             this.btnHabitaciones.TabIndex = 2;
             this.btnHabitaciones.Text = "      Habitaciones";
             this.btnHabitaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -282,7 +287,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 98);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(4, 52);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -296,10 +301,10 @@
             this.btnHuespedes.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuespedes.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnHuespedes.Image = ((System.Drawing.Image)(resources.GetObject("btnHuespedes.Image")));
-            this.btnHuespedes.Location = new System.Drawing.Point(0, 98);
+            this.btnHuespedes.Location = new System.Drawing.Point(-16, 98);
             this.btnHuespedes.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuespedes.Name = "btnHuespedes";
-            this.btnHuespedes.Size = new System.Drawing.Size(307, 49);
+            this.btnHuespedes.Size = new System.Drawing.Size(323, 49);
             this.btnHuespedes.TabIndex = 0;
             this.btnHuespedes.Text = "      Huéspedes";
             this.btnHuespedes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -421,6 +426,35 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnReporte.FlatAppearance.BorderSize = 0;
+            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.ForeColor = System.Drawing.Color.White;
+            this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
+            this.btnReporte.Location = new System.Drawing.Point(-29, 281);
+            this.btnReporte.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(336, 61);
+            this.btnReporte.TabIndex = 14;
+            this.btnReporte.Text = "      Reporte";
+            this.btnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReporte.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.pictureBox3.Location = new System.Drawing.Point(-7, 281);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(10, 63);
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -449,6 +483,7 @@
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -482,6 +517,8 @@
         private System.Windows.Forms.Timer tmMostrarMenu;
         private System.Windows.Forms.Timer tmOcultarMenu;
         private System.Windows.Forms.Timer tmFechaHora;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnReporte;
     }
 }
 

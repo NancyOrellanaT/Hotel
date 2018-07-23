@@ -35,7 +35,7 @@ namespace COMPLETE_FLAT_UI
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FrmRegistroHuesped frm = new FrmRegistroHuesped();
+            FrmRegistroHuespedes frm = new FrmRegistroHuespedes();
             if (dataGridView1.SelectedRows.Count > 0)
             {               
                // frm.txtid.Text= dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -53,7 +53,7 @@ namespace COMPLETE_FLAT_UI
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            FrmRegistroHuesped frm = new FrmRegistroHuesped();
+            FrmRegistroHuespedes frm = new FrmRegistroHuespedes();
             frm.ShowDialog();
         }
 

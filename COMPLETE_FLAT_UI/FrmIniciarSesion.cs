@@ -19,7 +19,7 @@ namespace COMPLETE_FLAT_UI
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "Adriana" && txtContraseña.Text == "Pass123")
+            if (txtUsuario.Text == "" && txtContraseña.Text == "")
             {
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
                 frmMenuPrincipal.Show();

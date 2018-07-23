@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="pictureBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAN0AAADdAXBTogcAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAACs0lEQVRYR+WXzU/TcBjHq5JoPC1Royc03jzqQfkTDAfjxZcAAWOBIy8aydC4DC5y4EAwUQxG1IRE
+        DY4NicJkU7a5NTDpVsJqwK3LNgYizBnMlgzTx99TKY5m40VpMXr4/Np8n1/zfJKn6QsFAJTHHz5Bjjvw
+        XGukxc1G4m5f9KSyqAXS4mEjs8z7WJGyqAUUK3zREYE5tQXuxb17786wR5BHMX6fnFN8aGHQ44uk1Rbo
+        nBnv64xzsEwShTCXilqM4H6cY7IEoEtgdZhLxW0V4IMLXYwv+m2rBJyf9EedcT1D8CGu6cYzmOcVmAzP
+        H2PY6PxWCTjijWdJY8iiDXPNRrBpAV6Yr2DYSFJtgTbBy7dMeQBpDY38EvggLNQSga9qCxgmHIt6zg4y
+        LUFXIebSRVqMwBBYLdAaeHcYc2oimCgkN+HndQVo+jhUVhZBdfUpMBoLcu4hoIAt2gBDywxP629jnlcg
+        EEqYyQhSawrQ9GnSHLLQ59xH6P945WY3XwMy5mA9g3leAVzWHUFV1cVVAjTdknMfoS949Va2gGmqnsX8
+        7xXYyAiSly5f4y+UQuD8T+bKKkxSLdB0B/jmWYlAkxPAuHPTAhu5CaOl5e3cuRKQCZeUe6Qa3+wjwAqC
+        cY8qI1BVQPkgosahjOKgQ8IPtWsKsNfDMNoAEmONvyegfBSTpmHSHGQwyyvgrk+BswZWYOt0fzwCzQWU
+        r+NdrBjb7f0OSAErkkhlAeUHyf636cwhWwqQg/YUiTQewYE36SVZAMHs3xZQfpZrLqD8Mfn/RmAa4Az9
+        9omg2cpZegf9Twy20OKN14IoMRTKYPaqx+GydTwTZazdgzzmjP1lctRmEZER+4uMxco9Ndvdw89dFlGm
+        1zE0iXsfO8YSD5xeEXno8C6RrAd7U6Rxce+Av247MFu54h/kppn8haAWYgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAI
@@ -132,9 +153,6 @@
         0uI0rgbQKFG1EHfGj9I95Il7AE1HVC2QE0kvBqwqseQYa87PAeEd+3anLAZEBtkAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="pictureBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnAsignacion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA

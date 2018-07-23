@@ -1,6 +1,6 @@
 ﻿namespace COMPLETE_FLAT_UI
 {
-    partial class FrmHuesped
+    partial class FrmHabitacion
     {
         /// <summary>
         /// Required designer variable.
@@ -31,110 +31,125 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnRegistrarHuesped = new System.Windows.Forms.Button();
-            this.btnListarHuespedes = new System.Windows.Forms.Button();
-            this.btnEditarHuesped = new System.Windows.Forms.Button();
-            this.btnEliminarHuesped = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHabitacionesDisponibles = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEliminarHabitacion = new System.Windows.Forms.Button();
+            this.btnEditarHabitacion = new System.Windows.Forms.Button();
+            this.btnListarHabitaciones = new System.Windows.Forms.Button();
+            this.btnRegistrarHabitacion = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnRegistrarHuesped
-            // 
-            this.btnRegistrarHuesped.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnRegistrarHuesped.FlatAppearance.BorderSize = 0;
-            this.btnRegistrarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarHuesped.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarHuesped.Location = new System.Drawing.Point(66, 148);
-            this.btnRegistrarHuesped.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRegistrarHuesped.Name = "btnRegistrarHuesped";
-            this.btnRegistrarHuesped.Size = new System.Drawing.Size(264, 47);
-            this.btnRegistrarHuesped.TabIndex = 12;
-            this.btnRegistrarHuesped.Text = "Registrar huesped";
-            this.btnRegistrarHuesped.UseVisualStyleBackColor = false;
-            this.btnRegistrarHuesped.Click += new System.EventHandler(this.btnRegistrarHuesped_Click);
-            // 
-            // btnListarHuespedes
-            // 
-            this.btnListarHuespedes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnListarHuespedes.FlatAppearance.BorderSize = 0;
-            this.btnListarHuespedes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarHuespedes.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarHuespedes.ForeColor = System.Drawing.Color.White;
-            this.btnListarHuespedes.Location = new System.Drawing.Point(66, 225);
-            this.btnListarHuespedes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarHuespedes.Name = "btnListarHuespedes";
-            this.btnListarHuespedes.Size = new System.Drawing.Size(264, 43);
-            this.btnListarHuespedes.TabIndex = 13;
-            this.btnListarHuespedes.Text = "Listar huespedes";
-            this.btnListarHuespedes.UseVisualStyleBackColor = false;
-            // 
-            // btnEditarHuesped
-            // 
-            this.btnEditarHuesped.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnEditarHuesped.FlatAppearance.BorderSize = 0;
-            this.btnEditarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarHuesped.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEditarHuesped.Location = new System.Drawing.Point(66, 305);
-            this.btnEditarHuesped.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditarHuesped.Name = "btnEditarHuesped";
-            this.btnEditarHuesped.Size = new System.Drawing.Size(264, 43);
-            this.btnEditarHuesped.TabIndex = 14;
-            this.btnEditarHuesped.Text = "Editar huesped";
-            this.btnEditarHuesped.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminarHuesped
-            // 
-            this.btnEliminarHuesped.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnEliminarHuesped.FlatAppearance.BorderSize = 0;
-            this.btnEliminarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarHuesped.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarHuesped.Location = new System.Drawing.Point(66, 388);
-            this.btnEliminarHuesped.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminarHuesped.Name = "btnEliminarHuesped";
-            this.btnEliminarHuesped.Size = new System.Drawing.Size(264, 43);
-            this.btnEliminarHuesped.TabIndex = 15;
-            this.btnEliminarHuesped.Text = "Eliminar huesped";
-            this.btnEliminarHuesped.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(61, 89);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 28);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "¿Qué deseas realizar?";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panel1.Controls.Add(this.btnHabitacionesDisponibles);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnEliminarHuesped);
-            this.panel1.Controls.Add(this.btnEditarHuesped);
-            this.panel1.Controls.Add(this.btnListarHuespedes);
-            this.panel1.Controls.Add(this.btnRegistrarHuesped);
-            this.panel1.Location = new System.Drawing.Point(746, -1);
+            this.panel1.Controls.Add(this.btnEliminarHabitacion);
+            this.panel1.Controls.Add(this.btnEditarHabitacion);
+            this.panel1.Controls.Add(this.btnListarHabitaciones);
+            this.panel1.Controls.Add(this.btnRegistrarHabitacion);
+            this.panel1.Location = new System.Drawing.Point(736, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 553);
-            this.panel1.TabIndex = 18;
+            this.panel1.Size = new System.Drawing.Size(385, 553);
+            this.panel1.TabIndex = 19;
+            // 
+            // btnHabitacionesDisponibles
+            // 
+            this.btnHabitacionesDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnHabitacionesDisponibles.FlatAppearance.BorderSize = 0;
+            this.btnHabitacionesDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHabitacionesDisponibles.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHabitacionesDisponibles.ForeColor = System.Drawing.Color.White;
+            this.btnHabitacionesDisponibles.Location = new System.Drawing.Point(70, 279);
+            this.btnHabitacionesDisponibles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHabitacionesDisponibles.Name = "btnHabitacionesDisponibles";
+            this.btnHabitacionesDisponibles.Size = new System.Drawing.Size(264, 65);
+            this.btnHabitacionesDisponibles.TabIndex = 18;
+            this.btnHabitacionesDisponibles.Text = "Listar habitaciones disponibles";
+            this.btnHabitacionesDisponibles.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(65, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 28);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "¿Qué deseas realizar?";
+            // 
+            // btnEliminarHabitacion
+            // 
+            this.btnEliminarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnEliminarHabitacion.FlatAppearance.BorderSize = 0;
+            this.btnEliminarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarHabitacion.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarHabitacion.Location = new System.Drawing.Point(73, 443);
+            this.btnEliminarHabitacion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarHabitacion.Name = "btnEliminarHabitacion";
+            this.btnEliminarHabitacion.Size = new System.Drawing.Size(264, 43);
+            this.btnEliminarHabitacion.TabIndex = 15;
+            this.btnEliminarHabitacion.Text = "Eliminar habitación";
+            this.btnEliminarHabitacion.UseVisualStyleBackColor = false;
+            // 
+            // btnEditarHabitacion
+            // 
+            this.btnEditarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnEditarHabitacion.FlatAppearance.BorderSize = 0;
+            this.btnEditarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarHabitacion.ForeColor = System.Drawing.Color.White;
+            this.btnEditarHabitacion.Location = new System.Drawing.Point(73, 374);
+            this.btnEditarHabitacion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarHabitacion.Name = "btnEditarHabitacion";
+            this.btnEditarHabitacion.Size = new System.Drawing.Size(264, 43);
+            this.btnEditarHabitacion.TabIndex = 14;
+            this.btnEditarHabitacion.Text = "Editar habitación";
+            this.btnEditarHabitacion.UseVisualStyleBackColor = false;
+            // 
+            // btnListarHabitaciones
+            // 
+            this.btnListarHabitaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnListarHabitaciones.FlatAppearance.BorderSize = 0;
+            this.btnListarHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarHabitaciones.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarHabitaciones.ForeColor = System.Drawing.Color.White;
+            this.btnListarHabitaciones.Location = new System.Drawing.Point(70, 194);
+            this.btnListarHabitaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.btnListarHabitaciones.Name = "btnListarHabitaciones";
+            this.btnListarHabitaciones.Size = new System.Drawing.Size(264, 65);
+            this.btnListarHabitaciones.TabIndex = 13;
+            this.btnListarHabitaciones.Text = "Listar todas las habitaciones";
+            this.btnListarHabitaciones.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistrarHabitacion
+            // 
+            this.btnRegistrarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnRegistrarHabitacion.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarHabitacion.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarHabitacion.Location = new System.Drawing.Point(70, 126);
+            this.btnRegistrarHabitacion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarHabitacion.Name = "btnRegistrarHabitacion";
+            this.btnRegistrarHabitacion.Size = new System.Drawing.Size(264, 47);
+            this.btnRegistrarHabitacion.TabIndex = 12;
+            this.btnRegistrarHabitacion.Text = "Registrar habitación";
+            this.btnRegistrarHabitacion.UseVisualStyleBackColor = false;
+            this.btnRegistrarHabitacion.Click += new System.EventHandler(this.btnRegistrarHabitacion_Click);
             // 
             // dataGridView1
             // 
@@ -158,9 +173,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.Column2});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,7 +184,7 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.dataGridView1.Location = new System.Drawing.Point(29, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 110);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -183,38 +196,26 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 405);
-            this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.Size = new System.Drawing.Size(675, 398);
+            this.dataGridView1.TabIndex = 20;
             // 
             // ID
             // 
-            this.ID.HeaderText = "CÓDIGO";
+            this.ID.HeaderText = "CÓDIGO ";
             this.ID.Name = "ID";
-            this.ID.Width = 97;
+            this.ID.Width = 101;
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "NOMBRES";
+            this.Column1.HeaderText = "DISPONIBILIDAD";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 113;
+            this.Column1.Width = 151;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "APELLIDO PATERNO";
+            this.Column2.HeaderText = "DETALLES";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 183;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "APELLIDO MATERNO";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 186;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "C.I.";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 58;
+            this.Column2.Width = 111;
             // 
             // label2
             // 
@@ -223,14 +224,14 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(40, 57);
+            this.label2.Location = new System.Drawing.Point(26, 56);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 28);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Huéspedes ";
+            this.label2.Size = new System.Drawing.Size(170, 28);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Habitaciones";
             // 
-            // FrmHuesped
+            // FrmHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,9 +240,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Name = "FrmHuesped";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmHuesped";
+            this.Name = "FrmHabitacion";
+            this.Text = "FrmHabitacion";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -252,18 +252,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnRegistrarHuesped;
-        private System.Windows.Forms.Button btnListarHuespedes;
-        private System.Windows.Forms.Button btnEditarHuesped;
-        private System.Windows.Forms.Button btnEliminarHuesped;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEliminarHabitacion;
+        private System.Windows.Forms.Button btnEditarHabitacion;
+        private System.Windows.Forms.Button btnListarHabitaciones;
+        private System.Windows.Forms.Button btnRegistrarHabitacion;
+        private System.Windows.Forms.Button btnHabitacionesDisponibles;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace COMPLETE_FLAT_UI
 {
-    public partial class FrmHuesped : Form
+    public partial class FrmAsignacionHuespedHabitacion : Form
     {
-        public FrmHuesped()
+        public FrmAsignacionHuespedHabitacion()
         {
             InitializeComponent();
-        }
-
-        private void btnRegistrarHuesped_Click(object sender, EventArgs e)
-        {
-            FrmRegistroHuespedes frmMantCliente = new FrmRegistroHuespedes();
-            frmMantCliente.Show();
         }
     }
 }

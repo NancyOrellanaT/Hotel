@@ -78,21 +78,20 @@ namespace COMPLETE_FLAT_UI
         private void btnMenu_Click(object sender, EventArgs e)
         {
             //-------CON EFECTO SLIDE
-            if (panelMenu.Width == 230)
-            {
-                this.tmOcultarMenu.Enabled = true;
-            }
-            else if (panelMenu.Width == 55)
-                this.tmMostrarMenu.Enabled = true;
+            //if (panelMenu.Width == 230)
+           // {
+            //    this.tmOcultarMenu.Enabled = true;
+           // }
+           // else 
+           //     this.tmMostrarMenu.Enabled = true;
 
             //-------SIN EFECTO SLIDE
-            //if (panelMenu.Width == 55)
-            //{
-            //    panelMenu.Width = 230;
-            //}
-            //else
-
-            //    panelMenu.Width = 55;
+            if (panelMenu.Width == 55)
+            {
+                panelMenu.Width = 230;
+            }
+            else
+               panelMenu.Width = 55;
         }
 
         private void tmMostrarMenu_Tick(object sender, EventArgs e)
@@ -143,10 +142,14 @@ namespace COMPLETE_FLAT_UI
         //METODOS PARA ABRIR OTROS FORMULARIOS Y MOSTRAR FORM DE LOGO Al CERRAR ----------------------------------------------------------
         private void btnListaClientes_Click(object sender, EventArgs e)
         {
-         
-           FormListaClientes fm = new FormListaClientes();
+
+            FrmHabitacion frmHabitacion = new FrmHabitacion();
+            frmHabitacion.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(frmHabitacion);
+
+           /*FormListaClientes fm = new FormListaClientes();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            AbrirFormEnPanel(fm);
+            AbrirFormEnPanel(fm);*/
         }
 
         private void btnMembresia_Click(object sender, EventArgs e)
@@ -222,10 +225,8 @@ namespace COMPLETE_FLAT_UI
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new FrmVacio());
+            AbrirFormEnPanel(new FrmAsignacionHuespedHabitacion());
         }
-
-        
 
     }
 }
