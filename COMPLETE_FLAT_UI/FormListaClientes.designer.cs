@@ -50,9 +50,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 25);
+            this.label1.Location = new System.Drawing.Point(28, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 22);
+            this.label1.Size = new System.Drawing.Size(151, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lista de clientes";
             // 
@@ -91,7 +92,8 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.dataGridView1.Location = new System.Drawing.Point(24, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 69);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -102,7 +104,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(525, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(700, 465);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
@@ -110,31 +112,31 @@
             // 
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
-            this.ID.Width = 45;
+            this.ID.Width = 50;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "NOMBRES";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 101;
+            this.Column1.Width = 113;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "APELLIDOS";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 108;
+            this.Column2.Width = 117;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "DIRECCION";
             this.Column3.Name = "Column3";
-            this.Column3.Width = 106;
+            this.Column3.Width = 119;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "TELEFONO";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 107;
+            this.Column4.Width = 117;
             // 
             // BtnCerrar
             // 
@@ -143,9 +145,10 @@
             this.BtnCerrar.FlatAppearance.BorderSize = 0;
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
-            this.BtnCerrar.Location = new System.Drawing.Point(641, 0);
+            this.BtnCerrar.Location = new System.Drawing.Point(855, 0);
+            this.BtnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(43, 43);
+            this.BtnCerrar.Size = new System.Drawing.Size(57, 53);
             this.BtnCerrar.TabIndex = 3;
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click_1);
@@ -162,9 +165,10 @@
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Silver;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(563, 92);
+            this.btnEditar.Location = new System.Drawing.Point(751, 113);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(100, 30);
+            this.btnEditar.Size = new System.Drawing.Size(133, 37);
             this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -183,9 +187,10 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Silver;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(563, 128);
+            this.button2.Location = new System.Drawing.Point(751, 158);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(133, 37);
             this.button2.TabIndex = 5;
             this.button2.Text = "Eliminar";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -203,9 +208,10 @@
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Silver;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(563, 56);
+            this.btnNuevo.Location = new System.Drawing.Point(751, 69);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+            this.btnNuevo.Size = new System.Drawing.Size(133, 37);
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -214,16 +220,17 @@
             // 
             // FormListaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(684, 446);
+            this.ClientSize = new System.Drawing.Size(912, 549);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormListaClientes";
             this.Text = "FormListaClientes";
             this.Load += new System.EventHandler(this.FormListaClientes_Load);

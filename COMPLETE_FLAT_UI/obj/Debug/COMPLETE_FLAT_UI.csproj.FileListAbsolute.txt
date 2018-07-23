@@ -32,3 +32,24 @@ D:\Programacion\TUT\Tutoriales #2\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\CO
 D:\Programacion\TUT\Tutoriales #2\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.exe.manifest
 D:\Programacion\TUT\Tutoriales #2\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.application
 D:\Programacion\TUT\Tutoriales #2\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.Form1.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\bin\Debug\COMPLETE_FLAT_UI.exe.config
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\bin\Debug\COMPLETE_FLAT_UI.exe.manifest
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\bin\Debug\COMPLETE_FLAT_UI.application
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\bin\Debug\COMPLETE_FLAT_UI.exe
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\bin\Debug\COMPLETE_FLAT_UI.pdb
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FormListaClientes.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FormMembresia.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.Properties.Resources.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.exe.manifest
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.application
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.exe
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.pdb
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmHuesped.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmRegistroHuesped.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmMenuPrincipal.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmVacio.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmLogo.resources
+C:\Users\asus\source\repos\COMPLETE_FLAT_UI\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmIniciarSesion.resources

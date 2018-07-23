@@ -72,11 +72,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmIniciarSesion.designer.cs">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacio.Designer.cs">
+      <DependentUpon>FrmVacio.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListaClientes.cs">
       <SubType>Form</SubType>
@@ -84,17 +90,17 @@
     <Compile Include="FormListaClientes.designer.cs">
       <DependentUpon>FormListaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogo.cs">
+    <Compile Include="FrmLogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogo.designer.cs">
-      <DependentUpon>FormLogo.cs</DependentUpon>
+    <Compile Include="FrmLogo.designer.cs">
+      <DependentUpon>FrmLogo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMantCliente.cs">
+    <Compile Include="FrmRegistroHuesped.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMantCliente.designer.cs">
-      <DependentUpon>FormMantCliente.cs</DependentUpon>
+    <Compile Include="FrmRegistroHuesped.designer.cs">
+      <DependentUpon>FrmRegistroHuesped.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMembresia.cs">
       <SubType>Form</SubType>
@@ -102,31 +108,43 @@
     <Compile Include="FormMembresia.designer.cs">
       <DependentUpon>FormMembresia.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuPrincipal.cs">
+    <Compile Include="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenuPrincipal.Designer.cs">
-      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    <Compile Include="FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHuesped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHuesped.Designer.cs">
+      <DependentUpon>FrmHuesped.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacio.resx">
+      <DependentUpon>FrmVacio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaClientes.resx">
       <DependentUpon>FormListaClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogo.resx">
-      <DependentUpon>FormLogo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLogo.resx">
+      <DependentUpon>FrmLogo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMantCliente.resx">
-      <DependentUpon>FormMantCliente.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistroHuesped.resx">
+      <DependentUpon>FrmRegistroHuesped.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMembresia.resx">
       <DependentUpon>FormMembresia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuPrincipal.resx">
-      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHuesped.resx">
+      <DependentUpon>FrmHuesped.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
