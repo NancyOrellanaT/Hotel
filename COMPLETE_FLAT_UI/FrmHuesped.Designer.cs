@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnRegistrarHuesped = new System.Windows.Forms.Button();
-            this.btnListarHuespedes = new System.Windows.Forms.Button();
             this.btnEditarHuesped = new System.Windows.Forms.Button();
             this.btnEliminarHuesped = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,21 +63,6 @@
             this.btnRegistrarHuesped.UseVisualStyleBackColor = false;
             this.btnRegistrarHuesped.Click += new System.EventHandler(this.btnRegistrarHuesped_Click);
             // 
-            // btnListarHuespedes
-            // 
-            this.btnListarHuespedes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnListarHuespedes.FlatAppearance.BorderSize = 0;
-            this.btnListarHuespedes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarHuespedes.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarHuespedes.ForeColor = System.Drawing.Color.White;
-            this.btnListarHuespedes.Location = new System.Drawing.Point(66, 225);
-            this.btnListarHuespedes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarHuespedes.Name = "btnListarHuespedes";
-            this.btnListarHuespedes.Size = new System.Drawing.Size(264, 43);
-            this.btnListarHuespedes.TabIndex = 13;
-            this.btnListarHuespedes.Text = "Listar huespedes";
-            this.btnListarHuespedes.UseVisualStyleBackColor = false;
-            // 
             // btnEditarHuesped
             // 
             this.btnEditarHuesped.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -86,7 +70,7 @@
             this.btnEditarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarHuesped.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEditarHuesped.Location = new System.Drawing.Point(66, 305);
+            this.btnEditarHuesped.Location = new System.Drawing.Point(66, 228);
             this.btnEditarHuesped.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarHuesped.Name = "btnEditarHuesped";
             this.btnEditarHuesped.Size = new System.Drawing.Size(264, 43);
@@ -101,7 +85,7 @@
             this.btnEliminarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarHuesped.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarHuesped.Location = new System.Drawing.Point(66, 388);
+            this.btnEliminarHuesped.Location = new System.Drawing.Point(66, 305);
             this.btnEliminarHuesped.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarHuesped.Name = "btnEliminarHuesped";
             this.btnEliminarHuesped.Size = new System.Drawing.Size(264, 43);
@@ -129,7 +113,6 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnEliminarHuesped);
             this.panel1.Controls.Add(this.btnEditarHuesped);
-            this.panel1.Controls.Add(this.btnListarHuespedes);
             this.panel1.Controls.Add(this.btnRegistrarHuesped);
             this.panel1.Location = new System.Drawing.Point(746, -1);
             this.panel1.Name = "panel1";
@@ -253,7 +236,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnRegistrarHuesped;
-        private System.Windows.Forms.Button btnListarHuespedes;
         private System.Windows.Forms.Button btnEditarHuesped;
         private System.Windows.Forms.Button btnEliminarHuesped;
         private System.Windows.Forms.Label label1;

@@ -76,3 +76,4 @@ C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.exe
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.pdb
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmHabitacion.resources
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmAsignacionHuespedHabitacion.resources
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmReporte.resources

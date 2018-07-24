@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarHabitacion = new System.Windows.Forms.Button();
             this.btnEditarHabitacion = new System.Windows.Forms.Button();
-            this.btnListarHabitaciones = new System.Windows.Forms.Button();
             this.btnRegistrarHabitacion = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +55,6 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnEliminarHabitacion);
             this.panel1.Controls.Add(this.btnEditarHabitacion);
-            this.panel1.Controls.Add(this.btnListarHabitaciones);
             this.panel1.Controls.Add(this.btnRegistrarHabitacion);
             this.panel1.Location = new System.Drawing.Point(736, 2);
             this.panel1.Name = "panel1";
@@ -70,7 +68,7 @@
             this.btnHabitacionesDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHabitacionesDisponibles.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHabitacionesDisponibles.ForeColor = System.Drawing.Color.White;
-            this.btnHabitacionesDisponibles.Location = new System.Drawing.Point(70, 279);
+            this.btnHabitacionesDisponibles.Location = new System.Drawing.Point(70, 199);
             this.btnHabitacionesDisponibles.Margin = new System.Windows.Forms.Padding(4);
             this.btnHabitacionesDisponibles.Name = "btnHabitacionesDisponibles";
             this.btnHabitacionesDisponibles.Size = new System.Drawing.Size(264, 65);
@@ -97,7 +95,7 @@
             this.btnEliminarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarHabitacion.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarHabitacion.Location = new System.Drawing.Point(73, 443);
+            this.btnEliminarHabitacion.Location = new System.Drawing.Point(70, 363);
             this.btnEliminarHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarHabitacion.Name = "btnEliminarHabitacion";
             this.btnEliminarHabitacion.Size = new System.Drawing.Size(264, 43);
@@ -112,28 +110,13 @@
             this.btnEditarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarHabitacion.ForeColor = System.Drawing.Color.White;
-            this.btnEditarHabitacion.Location = new System.Drawing.Point(73, 374);
+            this.btnEditarHabitacion.Location = new System.Drawing.Point(70, 292);
             this.btnEditarHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarHabitacion.Name = "btnEditarHabitacion";
             this.btnEditarHabitacion.Size = new System.Drawing.Size(264, 43);
             this.btnEditarHabitacion.TabIndex = 14;
             this.btnEditarHabitacion.Text = "Editar habitación";
             this.btnEditarHabitacion.UseVisualStyleBackColor = false;
-            // 
-            // btnListarHabitaciones
-            // 
-            this.btnListarHabitaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnListarHabitaciones.FlatAppearance.BorderSize = 0;
-            this.btnListarHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarHabitaciones.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarHabitaciones.ForeColor = System.Drawing.Color.White;
-            this.btnListarHabitaciones.Location = new System.Drawing.Point(70, 194);
-            this.btnListarHabitaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarHabitaciones.Name = "btnListarHabitaciones";
-            this.btnListarHabitaciones.Size = new System.Drawing.Size(264, 65);
-            this.btnListarHabitaciones.TabIndex = 13;
-            this.btnListarHabitaciones.Text = "Listar todas las habitaciones";
-            this.btnListarHabitaciones.UseVisualStyleBackColor = false;
             // 
             // btnRegistrarHabitacion
             // 
@@ -256,7 +239,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEliminarHabitacion;
         private System.Windows.Forms.Button btnEditarHabitacion;
-        private System.Windows.Forms.Button btnListarHabitaciones;
         private System.Windows.Forms.Button btnRegistrarHabitacion;
         private System.Windows.Forms.Button btnHabitacionesDisponibles;
         private System.Windows.Forms.DataGridView dataGridView1;

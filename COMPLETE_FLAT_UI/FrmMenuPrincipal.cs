@@ -154,9 +154,9 @@ namespace COMPLETE_FLAT_UI
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
-            FormMembresia frm = new FormMembresia();
-            frm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            AbrirFormEnPanel(frm);
+            FrmAsignacionHuespedHabitacion frmAsignacionHuespedHabitacion = new FrmAsignacionHuespedHabitacion();
+            frmAsignacionHuespedHabitacion.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(frmAsignacionHuespedHabitacion);
         }
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
@@ -210,6 +210,13 @@ namespace COMPLETE_FLAT_UI
             this.Hide();
             FrmIniciarSesion frmIniciarSesion = new FrmIniciarSesion();
             frmIniciarSesion.Show();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            FrmReporte frmReporte = new FrmReporte();
+            frmReporte.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(frmReporte);
         }
 
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace COMPLETE_FLAT_UI
 {
-    public partial class FrmAsignacionHuespedHabitacion : Form
+    public partial class FrmReporte : Form
     {
-        public FrmAsignacionHuespedHabitacion()
+        public FrmReporte()
         {
             InitializeComponent();
-        }
-
-        private void BtnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
