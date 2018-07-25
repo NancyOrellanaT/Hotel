@@ -274,6 +274,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "FrmReporte";
             this.Text = "FrmReporte";
+            this.Load += new System.EventHandler(this.FrmReporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

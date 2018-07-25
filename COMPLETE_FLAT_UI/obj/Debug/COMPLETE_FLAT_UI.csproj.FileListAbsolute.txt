@@ -77,3 +77,10 @@ C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.pdb
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmHabitacion.resources
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmAsignacionHuespedHabitacion.resources
 C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.FrmReporte.resources
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\FireSharp.dll
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\RestSharp.dll
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\bin\Debug\RestSharp.xml
+C:\Users\asus\source\repos\Hotel\COMPLETE_FLAT_UI\obj\Debug\COMPLETE_FLAT_UI.csproj.CopyComplete

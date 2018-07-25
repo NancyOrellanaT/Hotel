@@ -8,20 +8,48 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace COMPLETE_FLAT_UI
 {
     public partial class FrmMenuPrincipal : Form
     {
+        private int lx, ly;
+        private int sw, sh;
+
+        private int tolerance = 15;
+        private const int WM_NCHITTEST = 132;
+        private const int HTBOTTOMRIGHT = 17;
+        private Rectangle sizeGripRectangle;
+
         public FrmMenuPrincipal()
         {
             InitializeComponent();
             this.SetStyle(ControlStyles.ResizeRedraw, true);
-            
         }
-        int lx, ly;
-        int sw, sh;
-        //METODO PARA ARRASTRAR EL FORMULARIO---------------------------------------------------------------------
+
+        //Conexión con la base de datos
+        IFirebaseClient client;
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "eg8V1I44SwCAS6dNNwDE79S7XzihXaDQ4z4849rq",
+            BasePath = "https://hotel-dalias-b7893.firebaseio.com/"
+        };
+
+        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(config);
+
+            if (client != null)
+            {
+                MessageBox.Show("Conectado correctamente!");
+            }
+        }
+
+        //MÉTODO PARA ARRASTRAR EL FORMULARIO
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -32,8 +60,8 @@ namespace COMPLETE_FLAT_UI
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        //METODOS PARA CERRAR,MAXIMIZAR, MINIMIZAR FORMULARIO------------------------------------------------------
 
+        //MÉTODOS PARA CERRAR,MAXIMIZAR, MINIMIZAR FORMULARIO
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
             lx = this.Location.X;
@@ -74,18 +102,9 @@ namespace COMPLETE_FLAT_UI
             
         }
 
-        //METODOS PARA ANIMACION DE MENU SLIDER------------------------------------------------------
+        //MÉTODOS PARA EL MENÚ SLIDER
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            //-------CON EFECTO SLIDE
-            //if (panelMenu.Width == 230)
-           // {
-            //    this.tmOcultarMenu.Enabled = true;
-           // }
-           // else 
-           //     this.tmMostrarMenu.Enabled = true;
-
-            //-------SIN EFECTO SLIDE
             if (panelMenu.Width == 55)
             {
                 panelMenu.Width = 230;
@@ -111,7 +130,7 @@ namespace COMPLETE_FLAT_UI
                 panelMenu.Width = panelMenu.Width - 35;
         }
 
-        //METODO PARA ABRIR FORM DENTRO DE PANEL-----------------------------------------------------
+        //MÉTODO PARA ABRIR FORM DENTRO DE PANEL
         private void AbrirFormEnPanel(object formHijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
@@ -124,7 +143,8 @@ namespace COMPLETE_FLAT_UI
             this.panelContenedor.Tag = fh;
             fh.Show();
         }
-        //METODO PARA MOSTRAR FORMULARIO DE LOGO Al INICIAR ----------------------------------------------------------
+
+        //METODO PARA MOSTRAR FORMULARIO DE LOGO Al INICIAR
         private void MostrarFormLogo()
         {
             AbrirFormEnPanel(new FrmLogo());
@@ -134,22 +154,19 @@ namespace COMPLETE_FLAT_UI
         {
             MostrarFormLogo();
         }
-        //METODO PARA MOSTRAR FORMULARIO DE LOGO Al CERRAR OTROS FORM ----------------------------------------------------------
+
+        //MÉTODO PARA MOSTRAR FORMULARIO DE LOGO Al CERRAR OTROS FORM 
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
         {
             MostrarFormLogo();
         }
-        //METODOS PARA ABRIR OTROS FORMULARIOS Y MOSTRAR FORM DE LOGO Al CERRAR ----------------------------------------------------------
+
+        //MÉTODOS PARA ABRIR OTROS FORMULARIOS Y MOSTRAR FORM DE LOGO Al CERRAR 
         private void btnListaClientes_Click(object sender, EventArgs e)
         {
-
             FrmHabitacion frmHabitacion = new FrmHabitacion();
             frmHabitacion.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(frmHabitacion);
-
-           /*FormListaClientes fm = new FormListaClientes();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            AbrirFormEnPanel(fm);*/
         }
 
         private void btnMembresia_Click(object sender, EventArgs e)
@@ -158,18 +175,15 @@ namespace COMPLETE_FLAT_UI
             frmAsignacionHuespedHabitacion.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(frmAsignacionHuespedHabitacion);
         }
-        //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
+
+        //MÉTODO PARA HORA Y FECHA ACTUAL
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
-        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
-        private int tolerance = 15;
-        private const int WM_NCHITTEST = 132;
-        private const int HTBOTTOMRIGHT = 17;
-        private Rectangle sizeGripRectangle;
-      
+
+        //MÉTODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO EN TIEMPO DE EJECUCIÓN
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -185,7 +199,8 @@ namespace COMPLETE_FLAT_UI
                     break;
             }
         }
-        //----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL 
+
+        //DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL 
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
@@ -219,7 +234,7 @@ namespace COMPLETE_FLAT_UI
             AbrirFormEnPanel(frmReporte);
         }
 
-        //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
+        //COLOR Y GRIP DE RECTANGULO INFERIOR
         protected override void OnPaint(PaintEventArgs e)
         {
 

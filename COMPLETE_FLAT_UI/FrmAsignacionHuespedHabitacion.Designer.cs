@@ -530,6 +530,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAsignacionHuespedHabitacion";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmAsignacionHuespedHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

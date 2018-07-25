@@ -8,15 +8,20 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace COMPLETE_FLAT_UI
 {
     public partial class FrmRegistroHabitacion : Form
     {
+
         public FrmRegistroHabitacion()
         {
             InitializeComponent();
         }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -27,6 +32,15 @@ namespace COMPLETE_FLAT_UI
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        //Conexión con la base de datos
+        IFirebaseClient client;
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "eg8V1I44SwCAS6dNNwDE79S7XzihXaDQ4z4849rq",
+            BasePath = "https://hotel-dalias-b7893.firebaseio.com/"
+        };
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
@@ -40,7 +54,12 @@ namespace COMPLETE_FLAT_UI
 
         private void FormMantCliente_Load(object sender, EventArgs e)
         {
+            client = new FireSharp.FirebaseClient(config);
 
+            if (client != null)
+            {
+                MessageBox.Show("Conectado correctamente!");
+            }
         }
     }
 }
