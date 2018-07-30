@@ -74,7 +74,7 @@ namespace COMPLETE_FLAT_UI
 
             MessageBox.Show(huesped.codigoHuesped + huesped.nombres);
 
-            SetResponse response = await client.SetTaskAsync("Datos/" + txtCodigoHuesped.Text, huesped);
+            SetResponse response = await client.SetTaskAsync("Datos huéspedes/" + txtCodigoHuesped.Text, huesped);
             Huesped result = response.ResultAs<Huesped>();
 
             this.Close();

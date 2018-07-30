@@ -39,18 +39,18 @@
             this.btnEliminarAsignacion = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtdireccion = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtCodigoHuesped = new System.Windows.Forms.TextBox();
+            this.txtCodigoAsignacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCodigoHabitacion = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrecioNoche = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTiempoPermanencia = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTotalPagar = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -120,6 +120,7 @@
             this.btnAsignar.Text = "Asignar";
             this.btnAsignar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAsignar.UseVisualStyleBackColor = false;
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
             // btnEditarAsignacion
             // 
@@ -186,27 +187,27 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Código asignación:";
             // 
-            // txtdireccion
+            // txtCodigoHuesped
             // 
-            this.txtdireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCodigoHuesped.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdireccion.Location = new System.Drawing.Point(318, 176);
-            this.txtdireccion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(340, 26);
-            this.txtdireccion.TabIndex = 13;
+            this.txtCodigoHuesped.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoHuesped.Location = new System.Drawing.Point(318, 176);
+            this.txtCodigoHuesped.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoHuesped.Name = "txtCodigoHuesped";
+            this.txtCodigoHuesped.Size = new System.Drawing.Size(340, 26);
+            this.txtCodigoHuesped.TabIndex = 13;
             // 
-            // txtnombre
+            // txtCodigoAsignacion
             // 
-            this.txtnombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCodigoAsignacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(318, 129);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(340, 26);
-            this.txtnombre.TabIndex = 11;
+            this.txtCodigoAsignacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoAsignacion.Location = new System.Drawing.Point(318, 129);
+            this.txtCodigoAsignacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoAsignacion.Name = "txtCodigoAsignacion";
+            this.txtCodigoAsignacion.Size = new System.Drawing.Size(340, 26);
+            this.txtCodigoAsignacion.TabIndex = 11;
             // 
             // label2
             // 
@@ -220,15 +221,15 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Código huesped:";
             // 
-            // comboBox1
+            // cbCodigoHabitacion
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbCodigoHabitacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(318, 221);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(340, 24);
-            this.comboBox1.TabIndex = 20;
+            this.cbCodigoHabitacion.FormattingEnabled = true;
+            this.cbCodigoHabitacion.Location = new System.Drawing.Point(318, 221);
+            this.cbCodigoHabitacion.Name = "cbCodigoHabitacion";
+            this.cbCodigoHabitacion.Size = new System.Drawing.Size(340, 24);
+            this.cbCodigoHabitacion.TabIndex = 20;
             // 
             // label4
             // 
@@ -243,14 +244,14 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Precio por noche:";
             // 
-            // textBox1
+            // txtPrecioNoche
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(318, 270);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(91, 26);
-            this.textBox1.TabIndex = 22;
+            this.txtPrecioNoche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioNoche.Location = new System.Drawing.Point(318, 270);
+            this.txtPrecioNoche.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioNoche.Name = "txtPrecioNoche";
+            this.txtPrecioNoche.Size = new System.Drawing.Size(91, 26);
+            this.txtPrecioNoche.TabIndex = 22;
             // 
             // label6
             // 
@@ -278,14 +279,14 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "noches";
             // 
-            // textBox2
+            // txtTiempoPermanencia
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(318, 312);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(91, 26);
-            this.textBox2.TabIndex = 25;
+            this.txtTiempoPermanencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTiempoPermanencia.Location = new System.Drawing.Point(318, 312);
+            this.txtTiempoPermanencia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTiempoPermanencia.Name = "txtTiempoPermanencia";
+            this.txtTiempoPermanencia.Size = new System.Drawing.Size(91, 26);
+            this.txtTiempoPermanencia.TabIndex = 25;
             // 
             // label8
             // 
@@ -313,14 +314,14 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Total a pagar:";
             // 
-            // textBox3
+            // txtTotalPagar
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(318, 356);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(91, 26);
-            this.textBox3.TabIndex = 28;
+            this.txtTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalPagar.Location = new System.Drawing.Point(318, 356);
+            this.txtTotalPagar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalPagar.Name = "txtTotalPagar";
+            this.txtTotalPagar.Size = new System.Drawing.Size(91, 26);
+            this.txtTotalPagar.TabIndex = 28;
             // 
             // dateTimePicker1
             // 
@@ -511,20 +512,20 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTotalPagar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTiempoPermanencia);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrecioNoche);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCodigoHabitacion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtdireccion);
-            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtCodigoHuesped);
+            this.Controls.Add(this.txtCodigoAsignacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -549,18 +550,18 @@
         private System.Windows.Forms.Button btnEliminarAsignacion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txtdireccion;
-        public System.Windows.Forms.TextBox txtnombre;
+        public System.Windows.Forms.TextBox txtCodigoHuesped;
+        public System.Windows.Forms.TextBox txtCodigoAsignacion;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCodigoHabitacion;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtPrecioNoche;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtTiempoPermanencia;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtTotalPagar;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;

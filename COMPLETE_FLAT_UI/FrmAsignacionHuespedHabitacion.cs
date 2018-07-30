@@ -43,5 +43,27 @@ namespace COMPLETE_FLAT_UI
                 MessageBox.Show("Conectado correctamente!");
             }
         }
+
+        private async void btnAsignar_Click(object sender, EventArgs e)
+        {
+            var asignacionHuespedHabitacion = new AsignacionHuespedHabitacion
+            {
+                codigoAsignacion = txtCodigoAsignacion.Text,
+                codigoHuesped = txtCodigoHuesped.Text,
+                codigoHabitacion = cbCodigoHabitacion.Text,
+                precioNoche = txtPrecioNoche.Text,
+                tiempoPermanencia = txtTiempoPermanencia.Text,
+                fechaEntrada = dateTimePicker1.Text
+            };
+
+            SetResponse response = await client.SetTaskAsync("Datos asignacion de habitaciones/" + txtCodigoAsignacion.Text , asignacionHuespedHabitacion);
+            AsignacionHuespedHabitacion result = response.ResultAs<AsignacionHuespedHabitacion>();
+
+            txtCodigoAsignacion.Text = "";
+            txtCodigoHuesped.Text = "";
+            txtPrecioNoche.Text = "";
+            txtTiempoPermanencia.Text = "";
+            txtTotalPagar.Text = "";
+        }
     }
 }
