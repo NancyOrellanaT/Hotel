@@ -55,10 +55,29 @@ namespace COMPLETE_FLAT_UI
         {
             client = new FireSharp.FirebaseClient(config);
 
-            if (client != null)
+            if (client == null)
             {
-                MessageBox.Show("Conectado correctamente!");
+                MessageBox.Show("Ha ocurrido un error en la conexión");
             }
+        }
+
+        private async void btnGuardar_Click(object sender, EventArgs e)
+        {
+            var huesped = new Huesped
+            {
+                codigoHuesped = txtCodigoHuesped.Text,
+                nombres = txtNombres.Text,
+                apellidoPaterno = txtaApellidoPaterno.Text,
+                apellidoMaterno = txtApellidoMaterno.Text,
+                ci = txtCI.Text
+             };
+
+            MessageBox.Show(huesped.codigoHuesped + huesped.nombres);
+
+            SetResponse response = await client.SetTaskAsync("Datos/" + txtCodigoHuesped.Text, huesped);
+            Huesped result = response.ResultAs<Huesped>();
+
+            this.Close();
         }
     }
 }

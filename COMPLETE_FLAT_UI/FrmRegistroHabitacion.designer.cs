@@ -32,15 +32,15 @@
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txtCodigoHabitacion = new System.Windows.Forms.TextBox();
+            this.txtDetalles = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbDisponibilidad = new System.Windows.Forms.ComboBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,24 +85,24 @@
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // txtnombre
+            // txtCodigoHabitacion
             // 
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(224, 92);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(296, 26);
-            this.txtnombre.TabIndex = 3;
+            this.txtCodigoHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoHabitacion.Location = new System.Drawing.Point(224, 92);
+            this.txtCodigoHabitacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoHabitacion.Name = "txtCodigoHabitacion";
+            this.txtCodigoHabitacion.Size = new System.Drawing.Size(296, 26);
+            this.txtCodigoHabitacion.TabIndex = 3;
             // 
-            // txtdireccion
+            // txtDetalles
             // 
-            this.txtdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdireccion.Location = new System.Drawing.Point(224, 176);
-            this.txtdireccion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdireccion.Multiline = true;
-            this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(296, 139);
-            this.txtdireccion.TabIndex = 5;
+            this.txtDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalles.Location = new System.Drawing.Point(224, 176);
+            this.txtDetalles.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDetalles.Multiline = true;
+            this.txtDetalles.Name = "txtDetalles";
+            this.txtDetalles.Size = new System.Drawing.Size(296, 139);
+            this.txtDetalles.TabIndex = 5;
             // 
             // label2
             // 
@@ -142,20 +142,21 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Detalles:";
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(224, 359);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 43);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(224, 359);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(205, 43);
+            this.btnGuardar.TabIndex = 11;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -184,31 +185,31 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // cbDisponibilidad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbDisponibilidad.FormattingEnabled = true;
+            this.cbDisponibilidad.Items.AddRange(new object[] {
             "Disponible",
             "Ocupado"});
-            this.comboBox1.Location = new System.Drawing.Point(224, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(296, 24);
-            this.comboBox1.TabIndex = 16;
+            this.cbDisponibilidad.Location = new System.Drawing.Point(224, 132);
+            this.cbDisponibilidad.Name = "cbDisponibilidad";
+            this.cbDisponibilidad.Size = new System.Drawing.Size(296, 24);
+            this.cbDisponibilidad.TabIndex = 16;
             // 
             // FrmRegistroHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 430);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbDisponibilidad);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtdireccion);
-            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtDetalles);
+            this.Controls.Add(this.txtCodigoHabitacion);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -231,12 +232,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
-        public System.Windows.Forms.TextBox txtnombre;
-        public System.Windows.Forms.TextBox txtdireccion;
+        public System.Windows.Forms.TextBox txtCodigoHabitacion;
+        public System.Windows.Forms.TextBox txtDetalles;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbDisponibilidad;
     }
 }
