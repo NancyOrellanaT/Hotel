@@ -40,7 +40,7 @@ namespace Hotel
 
             if (client != null)
             {
-                MessageBox.Show("Conectado correctamente!");
+                //MessageBox.Show("Conectado correctamente!");
             }
         }
 

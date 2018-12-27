@@ -99,7 +99,7 @@ namespace Hotel
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+  
         }
 
         //MÉTODOS PARA EL MENÚ SLIDER
@@ -235,7 +235,7 @@ namespace Hotel
         }
 
         //COLOR Y GRIP DE RECTANGULO INFERIOR
-        protected override void OnPaint(PaintEventArgs e)
+       protected override void OnPaint(PaintEventArgs e)
         {
 
             SolidBrush blueBrush = new SolidBrush(Color.FromArgb(57, 61, 69));
@@ -244,7 +244,7 @@ namespace Hotel
             base.OnPaint(e);
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, sizeGripRectangle);
         }
-
+        
         private void button5_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new FrmAsignacionHuespedHabitacion());
