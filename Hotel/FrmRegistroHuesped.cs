@@ -19,6 +19,7 @@ namespace Hotel
         public FrmRegistroHuespedes()
         {
             InitializeComponent();
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -63,20 +64,28 @@ namespace Hotel
 
         private async void btnGuardar_Click(object sender, EventArgs e)
         {
+            FirebaseResponse resp = await client.GetTaskAsync("Contadores/Contador huéspedes");
+            Contador get = resp.ResultAs<Contador>();
+
             var huesped = new Huesped
             {
-                codigoHuesped = txtCodigoHuesped.Text,
+                codigoHuesped = (Convert.ToInt32(get.cont_huespedes) + 1).ToString(),
                 nombres = txtNombres.Text,
                 apellidoPaterno = txtaApellidoPaterno.Text,
                 apellidoMaterno = txtApellidoMaterno.Text,
                 ci = txtCI.Text
-             };
+            };
 
-            MessageBox.Show(huesped.codigoHuesped + huesped.nombres);
+            SetResponse resp1 = await client.SetTaskAsync("Datos huéspedes/" + huesped.codigoHuesped, huesped);
+            Huesped result = resp1.ResultAs<Huesped>();
 
-            SetResponse response = await client.SetTaskAsync("Datos huéspedes/" + txtCodigoHuesped.Text, huesped);
-            Huesped result = response.ResultAs<Huesped>();
+            var obj = new Contador
+            {
+                cont_huespedes = huesped.codigoHuesped
+            };
 
+            SetResponse resp2 = await client.SetTaskAsync("Contadores/Contador huéspedes", obj);
+            
             this.Close();
         }
     }

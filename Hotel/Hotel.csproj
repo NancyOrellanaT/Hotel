@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsignacionHuespedHabitacion.cs" />
+    <Compile Include="Contador.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="FrmHabitacion.cs">
       <SubType>Form</SubType>

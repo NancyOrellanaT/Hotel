@@ -20,7 +20,7 @@ namespace Hotel
         private void btnRegistrarHuesped_Click(object sender, EventArgs e)
         {
             FrmRegistroHuespedes frmMantCliente = new FrmRegistroHuespedes();
-            frmMantCliente.Show();
+            frmMantCliente.Show();       
         }
     }
 }
