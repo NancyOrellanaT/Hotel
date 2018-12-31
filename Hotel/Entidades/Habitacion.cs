@@ -1,9 +1,9 @@
 ﻿namespace Hotel
 {
-    internal class Habitacion
+    class Habitacion
     {
         public string codigoHabitacion { get; set; }
-        public string disponibilidad { get; set; }
-        public string detalles { get; set; }
+        public bool disponibilidad { get; set; }
+        public string descripcion { get; set; }
     }
 }

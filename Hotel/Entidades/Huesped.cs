@@ -1,6 +1,6 @@
 ﻿namespace Hotel
 {
-    internal class Huesped
+    class Huesped
     {
         public string codigoHuesped { get; set; }
         public string nombres { get; set; }
