@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Hotel
 {
@@ -14,7 +15,21 @@ namespace Hotel
     {
         public FrmIniciarSesion()
         {
-           InitializeComponent();
+            InitializeComponent();
+            Conectar();
+        }
+
+        private void Conectar()
+        {
+            try
+            {
+                SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=hotel;Integrated Security=True");
+                conexion.Open();
+                MessageBox.Show("Se ha conectado exitosamente a la base de datos");
+            } catch(Exception e)
+            {
+                MessageBox.Show("No se pudo conectar a la base de datos");
+            }   
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -23,7 +38,7 @@ namespace Hotel
             {
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
                 frmMenuPrincipal.Show();
-                this.Hide();
+                Hide();
             } else
             {
                 MessageBox.Show("Ingrese correctamente sus datos", "Ha ocurrido un error :(");
