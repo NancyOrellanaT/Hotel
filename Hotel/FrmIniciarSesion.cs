@@ -32,7 +32,7 @@ namespace Hotel
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {23+
+        {
             if (txtUsuario.Text == "" && txtContraseña.Text == "")
             {
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
