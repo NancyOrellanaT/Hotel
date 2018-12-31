@@ -25,7 +25,6 @@ namespace Hotel
             {
                 SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=hotel;Integrated Security=True");
                 conexion.Open();
-                MessageBox.Show("Se ha conectado exitosamente a la base de datos");
             } catch(Exception e)
             {
                 MessageBox.Show("No se pudo conectar a la base de datos");
@@ -33,7 +32,7 @@ namespace Hotel
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {
+        {23+
             if (txtUsuario.Text == "" && txtContraseña.Text == "")
             {
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
