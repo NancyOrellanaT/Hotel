@@ -12,15 +12,14 @@ namespace Hotel
         public DateTime FechaEntrada { get; set; }
         public DateTime FechaSalida { get; set; }
 
-        public AsignacionHuespedHabitacion(int codigoAsignacion, int codigoHuesped, int codigoHabitacion, int codigoEmpleado, float precioNoche, DateTime fechaEntrada, DateTime fechaSalida)
+        public AsignacionHuespedHabitacion(int codigoHuesped, int codigoHabitacion, int codigoEmpleado, float precioNoche, DateTime fechaEntrada, DateTime fechaSalida)
         {
-            this.CodigoAsignacion = codigoAsignacion;
-            this.CodigoHuesped = codigoHuesped;
-            this.CodigoHabitacion = codigoHabitacion;
-            this.CodigoEmpleado = codigoEmpleado;
-            this.PrecioPorNoche = precioNoche;
-            this.FechaEntrada = fechaEntrada;
-            this.FechaSalida = fechaSalida;
+            CodigoHuesped = codigoHuesped;
+            CodigoHabitacion = codigoHabitacion;
+            CodigoEmpleado = codigoEmpleado;
+            PrecioPorNoche = precioNoche;
+            FechaEntrada = fechaEntrada;
+            FechaSalida = fechaSalida;
         }
 
     }

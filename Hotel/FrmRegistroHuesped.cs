@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.Control;
+using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,9 +7,11 @@ namespace Hotel
 {
     public partial class FrmRegistroHuespedes : Form
     {
+        Conexion conexion;
         public FrmRegistroHuespedes()
         {
             InitializeComponent();
+            conexion = new Conexion();
 
         }
 
@@ -38,10 +41,13 @@ namespace Hotel
 
         }
 
-        private async void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
-            
+            Huesped huesped = new Huesped(txtNombres.Text, txtaApellidoPaterno.Text, txtApellidoMaterno.Text, txtCI.Text);
+
+            conexion.EjecutarSQL("Insert Into Huesped (nombres, apellidoPaterno, apellidoMaterno, CI) values ('" + huesped.Nombres + "','" + huesped.ApellidoPaterno + "','" + huesped.ApellidoMaterno + "','" + huesped.CI + "')");
+            conexion.Cerrar();
+
             this.Close();
         }
     }

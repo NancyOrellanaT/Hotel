@@ -8,9 +8,9 @@
 
         public Habitacion(string codigoHabitacion, bool disponibilidad, string descripcion)
         {
-            this.CodigoHabitacion = codigoHabitacion;
-            this.Disponibilidad = disponibilidad;
-            this.Descripcion = descripcion;
+            CodigoHabitacion = codigoHabitacion;
+            Disponibilidad = disponibilidad;
+            Descripcion = descripcion;
         }
     }
 }

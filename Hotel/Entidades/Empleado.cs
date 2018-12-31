@@ -8,7 +8,6 @@ namespace Hotel.Entidades
 {
     class Empleado
     {
-
         public int CodigoEmpleado { get; set; }
         public string Nombres { get; set; }
         public string ApellidoPaterno { get; set; }
@@ -20,17 +19,16 @@ namespace Hotel.Entidades
         public string Usuario { get; set; }
         public string Contrasena { get; set; }
 
-        public Empleado(int codigoEmpleado, string nombres, string apellidoPaterno, string apellidoMaterno, string telefono, string celular, string ci, string direccion, string usuario, string contrasena)
-        {
-            this.CodigoEmpleado = codigoEmpleado;
-            this.Nombres = nombres;
-            this.ApellidoPaterno = apellidoPaterno;
-            this.Telefono = telefono;
-            this.Celular = celular;
-            this.CI = ci;
-            this.Direccion = direccion;
-            this.Usuario = usuario;
-            this.Contrasena = contrasena;
+        public Empleado(string nombres, string apellidoPaterno, string apellidoMaterno, string telefono, string celular, string ci, string direccion, string usuario, string contrasena)
+        { 
+            Nombres = nombres;
+            ApellidoPaterno = apellidoPaterno;
+            Telefono = telefono;
+            Celular = celular;
+            CI = ci;
+            Direccion = direccion;
+            Usuario = usuario;
+            Contrasena = contrasena;
         }
     }
 }
