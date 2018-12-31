@@ -21,7 +21,7 @@ namespace Hotel
 
         private async void btnAsignar_Click(object sender, EventArgs e)
         {
-            var asignacionHuespedHabitacion = new AsignacionHuespedHabitacion
+            /*var asignacionHuespedHabitacion = new AsignacionHuespedHabitacion
             {
                 codigoAsignacion = txtCodigoAsignacion.Text,
                 codigoHuesped = txtCodigoHuesped.Text,
@@ -35,7 +35,7 @@ namespace Hotel
             txtCodigoHuesped.Text = "";
             txtPrecioNoche.Text = "";
             txtTiempoPermanencia.Text = "";
-            txtTotalPagar.Text = "";
+            txtTotalPagar.Text = "";*/
         }
     }
 }

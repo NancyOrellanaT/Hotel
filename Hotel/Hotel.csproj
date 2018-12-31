@@ -86,7 +86,7 @@
   <ItemGroup>
     <Compile Include="Control\Conexion.cs" />
     <Compile Include="Entidades\AsignacionHuespedHabitacion.cs" />
-    <Compile Include="Contador.cs" />
+    <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="FrmHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>

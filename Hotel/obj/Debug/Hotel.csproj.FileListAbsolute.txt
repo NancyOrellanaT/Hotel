@@ -34,8 +34,6 @@ C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Hotel.exe.manifest
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Hotel.application
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Hotel.exe
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Hotel.pdb
-C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\FireSharp.dll
-C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\FireSharp.Serialization.JsonNet.dll
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\RestSharp.dll
 C:\Users\Adriana Orellana\source\repos\Hotel\Hotel\bin\Debug\Newtonsoft.Json.xml

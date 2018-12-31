@@ -47,14 +47,14 @@ namespace Hotel
 
         private async void btnGuardar_Click(object sender, EventArgs e)
         {
-            var habitacion = new Habitacion
+            /*var habitacion = new Habitacion
             {
                 codigoHabitacion = txtCodigoHabitacion.Text,
                 disponibilidad = cbDisponibilidad.Text,
                 detalles = txtDetalles.Text
             };
 
-            this.Close();
+            this.Close();*/
         }
     }
 }

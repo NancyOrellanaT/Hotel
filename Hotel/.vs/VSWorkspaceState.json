@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Control",
+    "\\Entidades"
   ],
+  "SelectedNode": "\\FormMenuPrincipal.cs",
   "PreviewInSolutionExplorer": false
 }
