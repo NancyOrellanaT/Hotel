@@ -1,12 +1,14 @@
-﻿namespace Hotel
+﻿using System;
+
+namespace Hotel
 {
     internal class AsignacionHuespedHabitacion
     {
-        public string codigoAsignacion { get; set; }
-        public string codigoHuesped { get; set; }
-        public string codigoHabitacion { get; set; }
-        public string precioNoche { get; set; }
-        public string tiempoPermanencia { get; set; }
-        public string fechaEntrada { get; set; }
+        public string CodigoAsignacion { get; set; }
+        public string CodigoHuesped { get; set; }
+        public string CodigoHabitacion { get; set; }
+        public string PrecioNoche { get; set; }
+        public DateTime TiempoPermanencia { get; set; }
+        public DateTime FechaEntrada { get; set; }
     }
 }

@@ -2,10 +2,10 @@
 {
     class Huesped
     {
-        public string codigoHuesped { get; set; }
-        public string nombres { get; set; }
-        public string apellidoPaterno { get; set; }
-        public string apellidoMaterno { get; set; }
-        public string ci { get; set; }
+        public string CodigoHuesped { get; set; }
+        public string Nombres { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string ApellidoMaterno { get; set; }
+        public string CI { get; set; }
     }
 }

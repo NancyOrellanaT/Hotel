@@ -2,8 +2,8 @@
 {
     class Habitacion
     {
-        public string codigoHabitacion { get; set; }
-        public bool disponibilidad { get; set; }
-        public string descripcion { get; set; }
+        public string CodigoHabitacion { get; set; }
+        public bool Disponibilidad { get; set; }
+        public string Descripcion { get; set; }
     }
 }
