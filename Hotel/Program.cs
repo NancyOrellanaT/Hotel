@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.Herramientas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,12 @@ namespace Hotel
         [STAThread]
         static void Main()
         {
+            Log.Print("Iniciando aplicación...");
+                
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmIniciarSesion());
         }
+
     }
 }

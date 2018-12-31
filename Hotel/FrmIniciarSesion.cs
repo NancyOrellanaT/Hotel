@@ -8,37 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
+using Hotel.Control;
 
 namespace Hotel
 {
     public partial class FrmIniciarSesion : Form
     {
+
         public FrmIniciarSesion()
         {
             InitializeComponent();
-            Conectar();
-        }
-
-        private void Conectar()
-        {
-            try
-            {
-                SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=hotel;Integrated Security=True");
-                conexion.Open();
-            } catch(Exception e)
-            {
-                MessageBox.Show("No se pudo conectar a la base de datos");
-            }   
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+            Conexion conexion = new Conexion();
+
             if (txtUsuario.Text == "" && txtContraseña.Text == "")
             {
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
                 frmMenuPrincipal.Show();
                 Hide();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Ingrese correctamente sus datos", "Ha ocurrido un error :(");
             }
