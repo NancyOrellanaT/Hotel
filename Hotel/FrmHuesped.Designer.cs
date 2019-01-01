@@ -36,9 +36,9 @@
             this.btnEliminarHuesped = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnListar = new System.Windows.Forms.Button();
             this.dgvHuespedes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnListarHuespes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHuespedes)).BeginInit();
             this.SuspendLayout();
@@ -66,13 +66,14 @@
             this.btnEditarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarHuesped.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEditarHuesped.Location = new System.Drawing.Point(66, 308);
+            this.btnEditarHuesped.Location = new System.Drawing.Point(66, 288);
             this.btnEditarHuesped.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarHuesped.Name = "btnEditarHuesped";
             this.btnEditarHuesped.Size = new System.Drawing.Size(264, 43);
             this.btnEditarHuesped.TabIndex = 14;
             this.btnEditarHuesped.Text = "Editar huésped";
             this.btnEditarHuesped.UseVisualStyleBackColor = false;
+            this.btnEditarHuesped.Click += new System.EventHandler(this.btnEditarHuesped_Click);
             // 
             // btnEliminarHuesped
             // 
@@ -81,13 +82,14 @@
             this.btnEliminarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarHuesped.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarHuesped.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarHuesped.Location = new System.Drawing.Point(66, 382);
+            this.btnEliminarHuesped.Location = new System.Drawing.Point(66, 352);
             this.btnEliminarHuesped.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarHuesped.Name = "btnEliminarHuesped";
             this.btnEliminarHuesped.Size = new System.Drawing.Size(264, 43);
             this.btnEliminarHuesped.TabIndex = 15;
             this.btnEliminarHuesped.Text = "Eliminar huésped";
             this.btnEliminarHuesped.UseVisualStyleBackColor = false;
+            this.btnEliminarHuesped.Click += new System.EventHandler(this.btnEliminarHuesped_Click);
             // 
             // label1
             // 
@@ -106,7 +108,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.panel1.Controls.Add(this.btnListarHuespes);
+            this.panel1.Controls.Add(this.btnListar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnEliminarHuesped);
             this.panel1.Controls.Add(this.btnEditarHuesped);
@@ -115,6 +117,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 553);
             this.panel1.TabIndex = 18;
+            // 
+            // btnListar
+            // 
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnListar.FlatAppearance.BorderSize = 0;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.ForeColor = System.Drawing.Color.White;
+            this.btnListar.Location = new System.Drawing.Point(66, 218);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(264, 43);
+            this.btnListar.TabIndex = 18;
+            this.btnListar.Text = "Listar huéspedes";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvHuespedes
             // 
@@ -174,22 +192,6 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Huéspedes ";
             // 
-            // btnListarHuespes
-            // 
-            this.btnListarHuespes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnListarHuespes.FlatAppearance.BorderSize = 0;
-            this.btnListarHuespes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarHuespes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarHuespes.ForeColor = System.Drawing.Color.White;
-            this.btnListarHuespes.Location = new System.Drawing.Point(66, 231);
-            this.btnListarHuespes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarHuespes.Name = "btnListarHuespes";
-            this.btnListarHuespes.Size = new System.Drawing.Size(264, 47);
-            this.btnListarHuespes.TabIndex = 18;
-            this.btnListarHuespes.Text = "Listar huéspedes";
-            this.btnListarHuespes.UseVisualStyleBackColor = false;
-            this.btnListarHuespes.Click += new System.EventHandler(this.btnListarHuespes_Click);
-            // 
             // FrmHuesped
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,6 +221,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvHuespedes;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnListarHuespes;
+        private System.Windows.Forms.Button btnListar;
     }
 }

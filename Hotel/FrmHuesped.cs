@@ -13,9 +13,12 @@ namespace Hotel
 {
     public partial class FrmHuesped : Form
     {
+        public Huesped huespedSeleccionado;
+
         public FrmHuesped()
         {
             InitializeComponent();
+            listarHuespedes();
         }
 
         private void btnRegistrarHuesped_Click(object sender, EventArgs e)
@@ -24,11 +27,48 @@ namespace Hotel
             frmMantCliente.Show();       
         }
 
-        private void btnListarHuespes_Click(object sender, EventArgs e)
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            listarHuespedes();
+        }
+
+        public void listarHuespedes()
         {
             HuespedControl huespedControl = new HuespedControl();
             dgvHuespedes.DataSource = huespedControl.ListarHuespedes();
             huespedControl.Cerrar();
+        }
+
+        private void btnEditarHuesped_Click(object sender, EventArgs e)
+        {
+            if (dgvHuespedes.SelectedRows.Count == 1)
+            {
+                int codigoHuesped = Convert.ToInt32(dgvHuespedes.CurrentRow.Cells[0].Value);
+                HuespedControl huespedControl = new HuespedControl();
+                huespedSeleccionado = huespedControl.BuscarHuesped(codigoHuesped);
+
+                FrmRegistroHuespedes frmRegistroHuespedes = new FrmRegistroHuespedes();
+                frmRegistroHuespedes.Show();
+                frmRegistroHuespedes.CargarDatos(huespedSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar una fila para poder editar los datos de un huésped.","¡Error!");
+            }
+        }
+
+        private void btnEliminarHuesped_Click(object sender, EventArgs e)
+        {
+            if (dgvHuespedes.SelectedRows.Count == 1)
+            {
+                int codigoHuesped = Convert.ToInt32(dgvHuespedes.CurrentRow.Cells[0].Value);
+                HuespedControl huespedControl = new HuespedControl();
+                huespedControl.EliminarHuesped(codigoHuesped);
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar una fila para poder editar los datos de un huésped.", "¡Error!");
+            }
         }
     }
 }

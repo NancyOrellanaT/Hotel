@@ -1,6 +1,6 @@
 ﻿namespace Hotel
 {
-    class Huesped
+    public class Huesped
     {
         public int CodigoHuesped { get; set; }
         public string Nombres { get; set; }
@@ -24,6 +24,8 @@
             ApellidoMaterno = apellidoMaterno;
             CI = ci;
         }
+
+        public Huesped() { }
 
     }
 }
