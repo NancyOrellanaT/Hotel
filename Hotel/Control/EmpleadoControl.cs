@@ -24,8 +24,11 @@ namespace Hotel.Control
 
             while (reader.Read())
             {
-                Log.Print("Se encontró una coincidencia para el inicio de sesión: " + reader.GetString(1) + " " + reader.GetString(2));
-                return true;
+                if (usuario == reader.GetString(8) && contra == reader.GetString(9))
+                {
+                    Log.Print("Se encontró una coincidencia para el inicio de sesión: " + reader.GetString(1) + " " + reader.GetString(2));
+                    return true;
+                }
             }
 
             return false;
