@@ -16,5 +16,14 @@
             CI = ci;
         }
 
+        public Huesped(int codigoHuesped, string nombres, string apellidoPaterno, string apellidoMaterno, string ci)
+        {
+            CodigoHuesped = codigoHuesped;
+            Nombres = nombres;
+            ApellidoPaterno = apellidoPaterno;
+            ApellidoMaterno = apellidoMaterno;
+            CI = ci;
+        }
+
     }
 }

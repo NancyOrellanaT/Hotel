@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel.exe" size="901120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel.exe" size="901632">
       <assemblyIdentity name="Hotel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7n/a4vRowPyZW81dNpJYyI75nWYqAsmeamjgjqWGhJg=</dsig:DigestValue>
+        <dsig:DigestValue>SOEoE8tjgufLolXZZHfAtfja7UOTy9wwecWU0nMjuBI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

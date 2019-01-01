@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,13 @@ namespace Hotel
         {
             FrmRegistroHuespedes frmMantCliente = new FrmRegistroHuespedes();
             frmMantCliente.Show();       
+        }
+
+        private void btnListarHuespes_Click(object sender, EventArgs e)
+        {
+            HuespedControl huespedControl = new HuespedControl();
+            dgvHuespedes.DataSource = huespedControl.ListarHuespedes();
+            huespedControl.Cerrar();
         }
     }
 }
