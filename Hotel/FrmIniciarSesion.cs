@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using Hotel.Control;
+using Hotel.Herramientas;
 
 namespace Hotel
 {
@@ -23,10 +24,14 @@ namespace Hotel
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            Conexion conexion = new Conexion();
+            EmpleadoControl empleadoControl = new EmpleadoControl();
+            bool iniciarSesion = empleadoControl.IniciarSesion(txtUsuario.Text,txtContraseña.Text);
+            empleadoControl.Cerrar();
 
-            if (txtUsuario.Text == "" && txtContraseña.Text == "")
+            if (iniciarSesion || (txtUsuario.Text == "" && txtContraseña.Text == ""))
             {
+                Log.Print("Inicio de sesión exitoso.");
+
                 FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
                 frmMenuPrincipal.Show();
                 Hide();

@@ -35,7 +35,7 @@ namespace Hotel.Control
 
             try
             {
-                SqlCommand sqlCommand = new SqlCommand(sql);
+                SqlCommand sqlCommand = new SqlCommand(sql,sqlConnection);
                 sqlCommand.ExecuteNonQuery();
             }
             catch (Exception e)
@@ -50,7 +50,7 @@ namespace Hotel.Control
 
             try
             {
-                SqlCommand sqlCommand = new SqlCommand(sql);
+                SqlCommand sqlCommand = new SqlCommand(sql,sqlConnection);
                 SqlDataReader dataReader = sqlCommand.ExecuteReader();
 
                 return dataReader;
