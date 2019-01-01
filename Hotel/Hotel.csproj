@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Control\Conexion.cs" />
     <Compile Include="Control\EmpleadoControl.cs" />
+    <Compile Include="Control\HabitacionControl.cs" />
     <Compile Include="Control\HuespedControl.cs" />
     <Compile Include="Entidades\AsignacionHuespedHabitacion.cs" />
     <Compile Include="Entidades\Empleado.cs" />

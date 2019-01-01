@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,16 +46,21 @@ namespace Hotel
 
         }
 
-        private async void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            /*var habitacion = new Habitacion
-            {
-                codigoHabitacion = txtCodigoHabitacion.Text,
-                disponibilidad = cbDisponibilidad.Text,
-                detalles = txtDetalles.Text
-            };
+            HabitacionControl habitacionControl = new HabitacionControl();
+            bool disponibilidad;
 
-            this.Close();*/
+            if (cbDisponibilidad.Text == "Disponible")
+                disponibilidad = true;
+            else
+                disponibilidad = false;
+
+            Habitacion habitacion = new Habitacion(txtCodigoHabitacion.Text, disponibilidad, txtDescripcion.Text);
+            habitacionControl.InsertarHabitacion(habitacion);
+            habitacionControl.Cerrar();
+
+            Close();
         }
     }
 }
