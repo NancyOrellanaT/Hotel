@@ -43,12 +43,11 @@ namespace Hotel
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Huesped huesped = new Huesped(txtNombres.Text, txtaApellidoPaterno.Text, txtApellidoMaterno.Text, txtCI.Text);
+            HuespedControl huespedControl = new HuespedControl();
+            Huesped huesped = new Huesped(txtNombres.Text, txtApellidoPaterno.Text, txtApellidoMaterno.Text, txtCI.Text);
+            huespedControl.InsertarHuesped(huesped);
 
-            conexion.EjecutarSQL("Insert Into Huesped (nombres, apellidoPaterno, apellidoMaterno, CI) values ('" + huesped.Nombres + "','" + huesped.ApellidoPaterno + "','" + huesped.ApellidoMaterno + "','" + huesped.CI + "')");
-            conexion.Cerrar();
-
-            this.Close();
+            Close();
         }
     }
 }

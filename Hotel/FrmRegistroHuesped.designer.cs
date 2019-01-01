@@ -32,7 +32,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.txtaApellidoPaterno = new System.Windows.Forms.TextBox();
+            this.txtApellidoPaterno = new System.Windows.Forms.TextBox();
             this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
             this.txtCI = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -95,14 +95,14 @@
             this.txtNombres.Size = new System.Drawing.Size(296, 26);
             this.txtNombres.TabIndex = 3;
             // 
-            // txtaApellidoPaterno
+            // txtApellidoPaterno
             // 
-            this.txtaApellidoPaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaApellidoPaterno.Location = new System.Drawing.Point(236, 133);
-            this.txtaApellidoPaterno.Margin = new System.Windows.Forms.Padding(4);
-            this.txtaApellidoPaterno.Name = "txtaApellidoPaterno";
-            this.txtaApellidoPaterno.Size = new System.Drawing.Size(296, 26);
-            this.txtaApellidoPaterno.TabIndex = 4;
+            this.txtApellidoPaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoPaterno.Location = new System.Drawing.Point(236, 133);
+            this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidoPaterno.Name = "txtApellidoPaterno";
+            this.txtApellidoPaterno.Size = new System.Drawing.Size(296, 26);
+            this.txtApellidoPaterno.TabIndex = 4;
             // 
             // txtApellidoMaterno
             // 
@@ -229,7 +229,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCI);
             this.Controls.Add(this.txtApellidoMaterno);
-            this.Controls.Add(this.txtaApellidoPaterno);
+            this.Controls.Add(this.txtApellidoPaterno);
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -257,7 +257,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         public System.Windows.Forms.TextBox txtNombres;
-        public System.Windows.Forms.TextBox txtaApellidoPaterno;
+        public System.Windows.Forms.TextBox txtApellidoPaterno;
         public System.Windows.Forms.TextBox txtApellidoMaterno;
         public System.Windows.Forms.TextBox txtCI;
         private System.Windows.Forms.Label label6;
