@@ -19,23 +19,15 @@ namespace Hotel
         {
         }
 
-        private async void btnAsignar_Click(object sender, EventArgs e)
+        private void btnAsignar_Click(object sender, EventArgs e)
         {
-            /*var asignacionHuespedHabitacion = new AsignacionHuespedHabitacion
-            {
-                codigoAsignacion = txtCodigoAsignacion.Text,
-                codigoHuesped = txtCodigoHuesped.Text,
-                codigoHabitacion = cbCodigoHabitacion.Text,
-                precioNoche = txtPrecioNoche.Text,
-                tiempoPermanencia = txtTiempoPermanencia.Text,
-                fechaEntrada = dateTimePicker1.Text
-            };
+            
+        }
 
-            txtCodigoAsignacion.Text = "";
-            txtCodigoHuesped.Text = "";
-            txtPrecioNoche.Text = "";
-            txtTiempoPermanencia.Text = "";
-            txtTotalPagar.Text = "";*/
+        private void btnEditarAsignacion_Click(object sender, EventArgs e)
+        {
+            FrmActualizacionAsignacionHuespedHabitacion frmActualizacionAsignacionHuespedHabitacion = new FrmActualizacionAsignacionHuespedHabitacion();
+            frmActualizacionAsignacionHuespedHabitacion.Show();
         }
     }
 }

@@ -90,6 +90,12 @@
     <Compile Include="Control\HuespedControl.cs" />
     <Compile Include="Entidades\AsignacionHuespedHabitacion.cs" />
     <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="FrmActualizacionAsignacionHuespedHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizacionAsignacionHuespedHabitacion.Designer.cs">
+      <DependentUpon>FrmActualizacionAsignacionHuespedHabitacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmActualizacionHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="Herramientas\Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmActualizacionAsignacionHuespedHabitacion.resx">
+      <DependentUpon>FrmActualizacionAsignacionHuespedHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmActualizacionHabitacion.resx">
       <DependentUpon>FrmActualizacionHabitacion.cs</DependentUpon>
     </EmbeddedResource>
