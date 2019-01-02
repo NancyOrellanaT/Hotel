@@ -56,13 +56,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -391,14 +384,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,48 +408,6 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(655, 182);
             this.dataGridView1.TabIndex = 35;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "CÓDIGO";
-            this.ID.Name = "ID";
-            this.ID.Width = 97;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "CÓDIGO HUÉSPED";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 174;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "CÓDIGO HABITACIÓN";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 189;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "PRECIO POR NOCHE";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 189;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "TIEMPO PERMANENCIA";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 205;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "TOTAL";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 83;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "FECHA ENTRADA";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 160;
             // 
             // label14
             // 
@@ -515,7 +458,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAsignacionHuespedHabitacion";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FrmAsignacionHuespedHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -551,13 +493,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }

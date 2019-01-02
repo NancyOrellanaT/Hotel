@@ -15,10 +15,6 @@ namespace Hotel
             this.Close();
         }
 
-        private void FrmAsignacionHuespedHabitacion_Load(object sender, EventArgs e)
-        {
-        }
-
         private void btnAsignar_Click(object sender, EventArgs e)
         {
             
