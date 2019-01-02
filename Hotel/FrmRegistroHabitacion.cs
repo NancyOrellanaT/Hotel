@@ -41,11 +41,6 @@ namespace Hotel
             this.Close();
         }
 
-        private void FormMantCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             HabitacionControl habitacionControl = new HabitacionControl();

@@ -15,5 +15,11 @@ namespace Hotel
             FrmRegistroHabitacion frmRegistroHabitacion = new FrmRegistroHabitacion();
             frmRegistroHabitacion.Show();
         }
+
+        private void btnEditarHabitacion_Click(object sender, EventArgs e)
+        {
+            FrmActualizacionHabitacion frmActualizacionHabitacion = new FrmActualizacionHabitacion();
+            frmActualizacionHabitacion.Show();
+        }
     }
 }

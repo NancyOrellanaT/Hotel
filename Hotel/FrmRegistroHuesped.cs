@@ -7,13 +7,10 @@ namespace Hotel
 {
     public partial class FrmRegistroHuespedes : Form
     {
-        Conexion conexion;
-        int codigoHuespedActualizar;
+        
         public FrmRegistroHuespedes()
         {
             InitializeComponent();
-            conexion = new Conexion();
-            codigoHuespedActualizar = 0;
 
         }
 
@@ -30,12 +27,12 @@ namespace Hotel
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -45,26 +42,6 @@ namespace Hotel
             huespedControl.InsertarHuesped(huesped);
 
             Close();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            HuespedControl huespedControl = new HuespedControl();
-            Huesped huesped = new Huesped(codigoHuespedActualizar,txtNombres.Text, txtApellidoPaterno.Text, txtApellidoMaterno.Text, txtCI.Text);
-            huespedControl.ActualizarHuesped(huesped);
-            huespedControl.Cerrar();
-
-            Close();
-        }
-
-        public void CargarDatos(Huesped huesped)
-        {
-            codigoHuespedActualizar = huesped.CodigoHuesped;
-            txtNombres.Text = huesped.Nombres;
-            txtApellidoPaterno.Text = huesped.ApellidoPaterno;
-            txtApellidoMaterno.Text = huesped.ApellidoMaterno;
-            txtCI.Text = huesped.CI;
-
         }
     }
 }

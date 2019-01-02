@@ -47,9 +47,9 @@ namespace Hotel
                 HuespedControl huespedControl = new HuespedControl();
                 huespedSeleccionado = huespedControl.BuscarHuesped(codigoHuesped);
 
-                FrmRegistroHuespedes frmRegistroHuespedes = new FrmRegistroHuespedes();
-                frmRegistroHuespedes.Show();
-                frmRegistroHuespedes.CargarDatos(huespedSeleccionado);
+                FrmActualizacionHuesped frmActualizacionHuesped = new FrmActualizacionHuesped();
+                frmActualizacionHuesped.Show();
+                frmActualizacionHuesped.CargarDatos(huespedSeleccionado);
             }
             else
             {

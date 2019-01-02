@@ -66,7 +66,7 @@
             this.btnHabitacionesDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnHabitacionesDisponibles.FlatAppearance.BorderSize = 0;
             this.btnHabitacionesDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHabitacionesDisponibles.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHabitacionesDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHabitacionesDisponibles.ForeColor = System.Drawing.Color.White;
             this.btnHabitacionesDisponibles.Location = new System.Drawing.Point(70, 199);
             this.btnHabitacionesDisponibles.Margin = new System.Windows.Forms.Padding(4);
@@ -79,12 +79,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(65, 69);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 28);
+            this.label1.Size = new System.Drawing.Size(253, 29);
             this.label1.TabIndex = 17;
             this.label1.Text = "¿Qué deseas realizar?";
             // 
@@ -93,7 +93,7 @@
             this.btnEliminarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnEliminarHabitacion.FlatAppearance.BorderSize = 0;
             this.btnEliminarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnEliminarHabitacion.Location = new System.Drawing.Point(70, 363);
             this.btnEliminarHabitacion.Margin = new System.Windows.Forms.Padding(4);
@@ -108,7 +108,7 @@
             this.btnEditarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnEditarHabitacion.FlatAppearance.BorderSize = 0;
             this.btnEditarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnEditarHabitacion.Location = new System.Drawing.Point(70, 292);
             this.btnEditarHabitacion.Margin = new System.Windows.Forms.Padding(4);
@@ -117,13 +117,14 @@
             this.btnEditarHabitacion.TabIndex = 14;
             this.btnEditarHabitacion.Text = "Editar habitación";
             this.btnEditarHabitacion.UseVisualStyleBackColor = false;
+            this.btnEditarHabitacion.Click += new System.EventHandler(this.btnEditarHabitacion_Click);
             // 
             // btnRegistrarHabitacion
             // 
             this.btnRegistrarHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnRegistrarHabitacion.FlatAppearance.BorderSize = 0;
             this.btnRegistrarHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarHabitacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarHabitacion.Location = new System.Drawing.Point(70, 126);
             this.btnRegistrarHabitacion.Margin = new System.Windows.Forms.Padding(4);
@@ -205,12 +206,12 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(26, 56);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 28);
+            this.label2.Size = new System.Drawing.Size(153, 29);
             this.label2.TabIndex = 19;
             this.label2.Text = "Habitaciones";
             // 
