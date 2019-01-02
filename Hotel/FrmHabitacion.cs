@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Hotel.Control;
+using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Hotel
@@ -20,6 +22,15 @@ namespace Hotel
         {
             FrmActualizacionHabitacion frmActualizacionHabitacion = new FrmActualizacionHabitacion();
             frmActualizacionHabitacion.Show();
+        }
+
+        private void btnHabitacionesDisponibles_Click(object sender, EventArgs e)
+        {
+            HabitacionControl habitacionControl = new HabitacionControl();
+            DataTable dt = habitacionControl.ListarHabitacionesDisponibles();
+            habitacionControl.Cerrar();
+
+            dataGridView1.DataSource = dt;
         }
     }
 }

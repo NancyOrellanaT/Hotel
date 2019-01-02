@@ -25,7 +25,8 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-                MessageBox.Show("No se pudo conectar a la base de datos: " + e.ToString());
+                MessageBox.Show("No se pudo conectar a la base de datos.");
+                Log.Print(e.ToString());
             }
         }
 
@@ -40,7 +41,8 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-                MessageBox.Show("No se pudo ejecutar la sentencia SQL: " + e.ToString());
+                MessageBox.Show("No se pudo ejecutar en la base de datos.");
+                Log.Print(e.ToString());
             }
         }
 
@@ -57,7 +59,8 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-                MessageBox.Show("No se pudo ejecutar la sentencia SQL: " + e.ToString());
+                MessageBox.Show("No se pudo consultar a la base de datos.");
+                Log.Print(e.ToString());
             }
 
             return null;
