@@ -38,9 +38,9 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCodigoHabitacion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -164,18 +164,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Disponibilidad:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(43, 83);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Código:";
-            // 
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,8 +180,21 @@
             this.txtCodigoHabitacion.Location = new System.Drawing.Point(230, 84);
             this.txtCodigoHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoHabitacion.Name = "txtCodigoHabitacion";
+            this.txtCodigoHabitacion.ReadOnly = true;
             this.txtCodigoHabitacion.Size = new System.Drawing.Size(296, 26);
             this.txtCodigoHabitacion.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(43, 83);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Código:";
             // 
             // FrmActualizacionHabitacion
             // 
@@ -233,8 +234,8 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtDescripcion;
         public System.Windows.Forms.TextBox txtCodigoHabitacion;
+        private System.Windows.Forms.Label label2;
     }
 }

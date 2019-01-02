@@ -32,5 +32,23 @@ namespace Hotel
 
             dataGridView1.DataSource = dt;
         }
+
+        private void btnListarHabitaciones_Click(object sender, EventArgs e)
+        {
+            HabitacionControl habitacionControl = new HabitacionControl();
+            DataTable dt = habitacionControl.ListarHabitaciones();
+            habitacionControl.Cerrar();
+
+            dataGridView1.DataSource = dt;
+        }
+
+        private void btnHabitacionesNoDisponibles_Click(object sender, EventArgs e)
+        {
+            HabitacionControl habitacionControl = new HabitacionControl();
+            DataTable dt = habitacionControl.ListarHabitacaionesNoDisponibles();
+            habitacionControl.Cerrar();
+
+            dataGridView1.DataSource = dt;
+        }
     }
 }

@@ -24,11 +24,49 @@ namespace Hotel.Control
             conexion.EjecutarSQL(sql);
         }
 
+        public DataTable ListarHabitaciones()
+        {
+            try
+            {
+                string sql = "SELECT * FROM Habitacion";
+                SqlDataReader dataReader = conexion.ConsultaSQL(sql);
+                DataTable dataTable = new DataTable();
+                dataTable.Load(dataReader);
+
+                return dataTable;
+            }
+            catch (Exception e)
+            {
+
+            }
+
+            return null;
+        }
+
         public DataTable ListarHabitacionesDisponibles()
         {
             try
             {
                 string sql = "SELECT * FROM Habitacion WHERE disponibilidad = 1";
+                SqlDataReader dataReader = conexion.ConsultaSQL(sql);
+                DataTable dataTable = new DataTable();
+                dataTable.Load(dataReader);
+
+                return dataTable;
+            }
+            catch (Exception e)
+            {
+
+            }
+
+            return null;
+        }
+
+        public DataTable ListarHabitacaionesNoDisponibles()
+        {
+            try
+            {
+                string sql = "SELECT * FROM Habitacion WHERE disponibilidad = 0";
                 SqlDataReader dataReader = conexion.ConsultaSQL(sql);
                 DataTable dataTable = new DataTable();
                 dataTable.Load(dataReader);
