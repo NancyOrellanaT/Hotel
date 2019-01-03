@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Hotel.Herramientas;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Hotel.Control
 {
@@ -24,6 +26,22 @@ namespace Hotel.Control
             conexion.EjecutarSQL(sql);
         }
 
+        public Habitacion BuscarHabitacion(string codigoHabitacion)
+        {
+            string sql = "SELECT * FROM Habitacion WHERE codigoHabitacion = '" + codigoHabitacion + "'";
+            SqlDataReader reader = conexion.ConsultaSQL(sql);
+            
+            while (reader.Read())
+            {
+                bool disponibilidad = (bool) reader["disponibilidad"];
+                string descripcion = reader.GetString(2);
+                
+                return new Habitacion(codigoHabitacion, disponibilidad, descripcion);
+            }
+
+            return new Habitacion();
+        }
+
         public DataTable ListarHabitaciones()
         {
             try
@@ -37,7 +55,8 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-
+                MessageBox.Show("No se pudo consultar las habitaciones");
+                Log.Print(e.ToString());
             }
 
             return null;
@@ -56,7 +75,8 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-
+                MessageBox.Show("No se pudo consultar las habitaciones");
+                Log.Print(e.ToString());
             }
 
             return null;
@@ -75,15 +95,30 @@ namespace Hotel.Control
             }
             catch (Exception e)
             {
-
+                MessageBox.Show("No se pudo consultar las habitaciones");
+                Log.Print(e.ToString());
             }
 
             return null;
+        }
+
+        public void ActualizarHabitacion(Habitacion habitacion)
+        {
+            int disponibilidad = habitacion.Disponibilidad ? 1 : 0;
+            string sql = "UPDATE Habitacion SET disponibilidad = " + disponibilidad + ", descripcion = '" + habitacion.Descripcion + "' WHERE codigoHabitacion = '" + habitacion.CodigoHabitacion + "'";
+            conexion.EjecutarSQL(sql);
+        }
+
+        public void EliminarHabitacion(int codigoHuesped)
+        {
+            string sql = "DELETE FROM Habitacion WHERE codigoHabitacion = '" + codigoHuesped + "'";
+            conexion.EjecutarSQL(sql);
         }
 
         public void Cerrar()
         {
             conexion.Cerrar();
         }
+
     }
 }

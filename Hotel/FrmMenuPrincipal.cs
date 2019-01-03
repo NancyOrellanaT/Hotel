@@ -72,7 +72,7 @@ namespace Hotel
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro de cerrarla aplicación?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de cerrar la aplicación?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Application.Exit();
             }

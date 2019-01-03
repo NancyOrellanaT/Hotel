@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Hotel.Control;
 
 namespace Hotel
 {
@@ -16,6 +17,13 @@ namespace Hotel
         public FrmActualizacionHabitacion()
         {
             InitializeComponent();
+        }
+
+        public void CargarDatos(Habitacion habitacion)
+        {
+            txtCodigoHabitacion.Text = habitacion.CodigoHabitacion;
+            cbDisponibilidad.Text = habitacion.Disponibilidad? "Disponible":"Ocupado";
+            txtDescripcion.Text = habitacion.Descripcion;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -37,6 +45,15 @@ namespace Hotel
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            HabitacionControl habitacionControl = new HabitacionControl();
+            habitacionControl.ActualizarHabitacion(new Habitacion(txtCodigoHabitacion.Text, cbDisponibilidad.Text == "Disponible", txtDescripcion.Text));
+            habitacionControl.Cerrar();
+
+            Close();
         }
     }
 }

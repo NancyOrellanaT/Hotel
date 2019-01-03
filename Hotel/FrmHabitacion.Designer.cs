@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnListarHabitaciones = new System.Windows.Forms.Button();
+            this.btnHabitacionesNoDisponibles = new System.Windows.Forms.Button();
             this.btnHabitacionesDisponibles = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarHabitacion = new System.Windows.Forms.Button();
@@ -39,8 +41,6 @@
             this.btnRegistrarHabitacion = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnHabitacionesNoDisponibles = new System.Windows.Forms.Button();
-            this.btnListarHabitaciones = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,38 @@
             this.panel1.Size = new System.Drawing.Size(385, 593);
             this.panel1.TabIndex = 19;
             // 
+            // btnListarHabitaciones
+            // 
+            this.btnListarHabitaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnListarHabitaciones.FlatAppearance.BorderSize = 0;
+            this.btnListarHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarHabitaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarHabitaciones.ForeColor = System.Drawing.Color.White;
+            this.btnListarHabitaciones.Location = new System.Drawing.Point(72, 183);
+            this.btnListarHabitaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.btnListarHabitaciones.Name = "btnListarHabitaciones";
+            this.btnListarHabitaciones.Size = new System.Drawing.Size(264, 47);
+            this.btnListarHabitaciones.TabIndex = 20;
+            this.btnListarHabitaciones.Text = "Listar habitaciones";
+            this.btnListarHabitaciones.UseVisualStyleBackColor = false;
+            this.btnListarHabitaciones.Click += new System.EventHandler(this.btnListarHabitaciones_Click);
+            // 
+            // btnHabitacionesNoDisponibles
+            // 
+            this.btnHabitacionesNoDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnHabitacionesNoDisponibles.FlatAppearance.BorderSize = 0;
+            this.btnHabitacionesNoDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHabitacionesNoDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHabitacionesNoDisponibles.ForeColor = System.Drawing.Color.White;
+            this.btnHabitacionesNoDisponibles.Location = new System.Drawing.Point(72, 335);
+            this.btnHabitacionesNoDisponibles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHabitacionesNoDisponibles.Name = "btnHabitacionesNoDisponibles";
+            this.btnHabitacionesNoDisponibles.Size = new System.Drawing.Size(264, 65);
+            this.btnHabitacionesNoDisponibles.TabIndex = 19;
+            this.btnHabitacionesNoDisponibles.Text = "Listar habitaciones no disponibles";
+            this.btnHabitacionesNoDisponibles.UseVisualStyleBackColor = false;
+            this.btnHabitacionesNoDisponibles.Click += new System.EventHandler(this.btnHabitacionesNoDisponibles_Click);
+            // 
             // btnHabitacionesDisponibles
             // 
             this.btnHabitacionesDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -71,7 +103,7 @@
             this.btnHabitacionesDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHabitacionesDisponibles.ForeColor = System.Drawing.Color.White;
             this.btnHabitacionesDisponibles.Location = new System.Drawing.Point(72, 251);
-            this.btnHabitacionesDisponibles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHabitacionesDisponibles.Margin = new System.Windows.Forms.Padding(4);
             this.btnHabitacionesDisponibles.Name = "btnHabitacionesDisponibles";
             this.btnHabitacionesDisponibles.Size = new System.Drawing.Size(264, 65);
             this.btnHabitacionesDisponibles.TabIndex = 18;
@@ -99,7 +131,7 @@
             this.btnEliminarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnEliminarHabitacion.Location = new System.Drawing.Point(72, 487);
-            this.btnEliminarHabitacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarHabitacion.Name = "btnEliminarHabitacion";
             this.btnEliminarHabitacion.Size = new System.Drawing.Size(264, 43);
             this.btnEliminarHabitacion.TabIndex = 15;
@@ -114,7 +146,7 @@
             this.btnEditarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnEditarHabitacion.Location = new System.Drawing.Point(72, 421);
-            this.btnEditarHabitacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditarHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarHabitacion.Name = "btnEditarHabitacion";
             this.btnEditarHabitacion.Size = new System.Drawing.Size(264, 43);
             this.btnEditarHabitacion.TabIndex = 14;
@@ -130,7 +162,7 @@
             this.btnRegistrarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarHabitacion.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarHabitacion.Location = new System.Drawing.Point(72, 118);
-            this.btnRegistrarHabitacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrarHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarHabitacion.Name = "btnRegistrarHabitacion";
             this.btnRegistrarHabitacion.Size = new System.Drawing.Size(264, 47);
             this.btnRegistrarHabitacion.TabIndex = 12;
@@ -148,37 +180,37 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.dataGridView1.Location = new System.Drawing.Point(31, 110);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.PaleVioletRed;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.PaleVioletRed;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(675, 438);
             this.dataGridView1.TabIndex = 20;
             // 
@@ -195,38 +227,6 @@
             this.label2.Size = new System.Drawing.Size(153, 29);
             this.label2.TabIndex = 19;
             this.label2.Text = "Habitaciones";
-            // 
-            // btnHabitacionesNoDisponibles
-            // 
-            this.btnHabitacionesNoDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnHabitacionesNoDisponibles.FlatAppearance.BorderSize = 0;
-            this.btnHabitacionesNoDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHabitacionesNoDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabitacionesNoDisponibles.ForeColor = System.Drawing.Color.White;
-            this.btnHabitacionesNoDisponibles.Location = new System.Drawing.Point(72, 335);
-            this.btnHabitacionesNoDisponibles.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHabitacionesNoDisponibles.Name = "btnHabitacionesNoDisponibles";
-            this.btnHabitacionesNoDisponibles.Size = new System.Drawing.Size(264, 65);
-            this.btnHabitacionesNoDisponibles.TabIndex = 19;
-            this.btnHabitacionesNoDisponibles.Text = "Listar habitaciones no disponibles";
-            this.btnHabitacionesNoDisponibles.UseVisualStyleBackColor = false;
-            this.btnHabitacionesNoDisponibles.Click += new System.EventHandler(this.btnHabitacionesNoDisponibles_Click);
-            // 
-            // btnListarHabitaciones
-            // 
-            this.btnListarHabitaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnListarHabitaciones.FlatAppearance.BorderSize = 0;
-            this.btnListarHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarHabitaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarHabitaciones.ForeColor = System.Drawing.Color.White;
-            this.btnListarHabitaciones.Location = new System.Drawing.Point(72, 183);
-            this.btnListarHabitaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarHabitaciones.Name = "btnListarHabitaciones";
-            this.btnListarHabitaciones.Size = new System.Drawing.Size(264, 47);
-            this.btnListarHabitaciones.TabIndex = 20;
-            this.btnListarHabitaciones.Text = "Listar habitaciones";
-            this.btnListarHabitaciones.UseVisualStyleBackColor = false;
-            this.btnListarHabitaciones.Click += new System.EventHandler(this.btnListarHabitaciones_Click);
             // 
             // FrmHabitacion
             // 

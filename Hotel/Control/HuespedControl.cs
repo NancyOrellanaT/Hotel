@@ -50,7 +50,6 @@ namespace Hotel.Control
                 huespedSeleccionado.ApellidoPaterno = reader.GetString(2);
                 huespedSeleccionado.ApellidoMaterno = reader.GetString(3);
                 huespedSeleccionado.CI = reader.GetString(4);
-
             }
 
             return huespedSeleccionado;

@@ -1,6 +1,6 @@
 ﻿namespace Hotel
 {
-    class Habitacion
+    public class Habitacion
     {
         public string CodigoHabitacion { get; set; }
         public bool Disponibilidad { get; set; }
@@ -12,6 +12,14 @@
             Disponibilidad = disponibilidad;
             Descripcion = descripcion;
         }
+
+        public Habitacion(bool disponibilidad, string descripcion)
+        {
+            Disponibilidad = disponibilidad;
+            Descripcion = descripcion;
+        }
+
+        public Habitacion() { }
 
     }
 }
