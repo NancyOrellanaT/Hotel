@@ -15,15 +15,16 @@ namespace Hotel
             this.Close();
         }
 
-        private void btnAsignar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnEditarAsignacion_Click(object sender, EventArgs e)
         {
             FrmActualizacionAsignacionHuespedHabitacion frmActualizacionAsignacionHuespedHabitacion = new FrmActualizacionAsignacionHuespedHabitacion();
             frmActualizacionAsignacionHuespedHabitacion.Show();
+        }
+
+        private void btnAsignar_Click_1(object sender, EventArgs e)
+        {
+            FrmSeleccionHuespedes frmSeleccionHuespedes = new FrmSeleccionHuespedes();
+            frmSeleccionHuespedes.Show();
         }
     }
 }
