@@ -20,9 +20,9 @@ namespace Hotel
 
         private void btnEditarHabitacion_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 1)
+            if (dgvHabitaciones.SelectedRows.Count == 1)
             {
-                string codigoHabitacion = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                string codigoHabitacion = dgvHabitaciones.CurrentRow.Cells[0].Value.ToString();
                 HabitacionControl habitacionControl = new HabitacionControl();
                 Habitacion habitacion = habitacionControl.BuscarHabitacion(codigoHabitacion);
 
@@ -44,7 +44,7 @@ namespace Hotel
             DataTable dt = habitacionControl.ListarHabitacionesDisponibles();
             habitacionControl.Cerrar();
 
-            dataGridView1.DataSource = dt;
+            dgvHabitaciones.DataSource = dt;
         }
 
         private void btnListarHabitaciones_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Hotel
             DataTable dt = habitacionControl.ListarHabitaciones();
             habitacionControl.Cerrar();
 
-            dataGridView1.DataSource = dt;
+            dgvHabitaciones.DataSource = dt;
         }
 
         private void btnHabitacionesNoDisponibles_Click(object sender, EventArgs e)
@@ -62,7 +62,21 @@ namespace Hotel
             DataTable dt = habitacionControl.ListarHabitacaionesNoDisponibles();
             habitacionControl.Cerrar();
 
-            dataGridView1.DataSource = dt;
+            dgvHabitaciones.DataSource = dt;
+        }
+
+        private void btnEliminarHabitacion_Click(object sender, EventArgs e)
+        {
+            if (dgvHabitaciones.SelectedRows.Count == 1)
+            {
+                int codigoHabitacion = Convert.ToInt32(dgvHabitaciones.CurrentRow.Cells[0].Value);
+                HabitacionControl habitacionControl = new HabitacionControl();
+                habitacionControl.EliminarHabitacion(codigoHabitacion);
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar una fila para poder eliminar los datos de la habitación.", "¡Error!");
+            }
         }
     }
 }

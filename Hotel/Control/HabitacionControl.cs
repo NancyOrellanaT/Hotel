@@ -109,9 +109,9 @@ namespace Hotel.Control
             conexion.EjecutarSQL(sql);
         }
 
-        public void EliminarHabitacion(int codigoHuesped)
+        public void EliminarHabitacion(int codigoHabitacion)
         {
-            string sql = "DELETE FROM Habitacion WHERE codigoHabitacion = '" + codigoHuesped + "'";
+            string sql = "DELETE FROM Habitacion WHERE codigoHabitacion = '" + codigoHabitacion + "'";
             conexion.EjecutarSQL(sql);
         }
 
