@@ -88,8 +88,10 @@
     <Compile Include="Control\EmpleadoControl.cs" />
     <Compile Include="Control\HabitacionControl.cs" />
     <Compile Include="Control\HuespedControl.cs" />
+    <Compile Include="Control\ReporteControl.cs" />
     <Compile Include="Entidades\AsignacionHuespedHabitacion.cs" />
     <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Reporte.cs" />
     <Compile Include="FrmActualizacionAsignacionHuespedHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>

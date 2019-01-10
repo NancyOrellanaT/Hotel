@@ -43,6 +43,10 @@
             this.txtPrecioNoche = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPrecioTotal = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnPrecioTotal = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,7 +142,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(424, 287);
+            this.label14.Location = new System.Drawing.Point(424, 273);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(132, 20);
@@ -147,7 +151,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(606, 289);
+            this.dateTimePicker2.Location = new System.Drawing.Point(606, 275);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(318, 22);
             this.dateTimePicker2.TabIndex = 46;
@@ -158,7 +162,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(424, 228);
+            this.label10.Location = new System.Drawing.Point(424, 214);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(144, 20);
@@ -167,7 +171,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(606, 230);
+            this.dateTimePicker1.Location = new System.Drawing.Point(606, 216);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(318, 22);
             this.dateTimePicker1.TabIndex = 43;
@@ -178,7 +182,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(705, 176);
+            this.label1.Location = new System.Drawing.Point(705, 162);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 20);
@@ -188,7 +192,7 @@
             // txtPrecioNoche
             // 
             this.txtPrecioNoche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioNoche.Location = new System.Drawing.Point(606, 171);
+            this.txtPrecioNoche.Location = new System.Drawing.Point(606, 157);
             this.txtPrecioNoche.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioNoche.Name = "txtPrecioNoche";
             this.txtPrecioNoche.Size = new System.Drawing.Size(91, 26);
@@ -200,7 +204,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(426, 166);
+            this.label4.Location = new System.Drawing.Point(426, 152);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 20);
@@ -211,17 +215,72 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(87, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(261, 266);
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(785, 395);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 20);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Bs.";
+            // 
+            // txtPrecioTotal
+            // 
+            this.txtPrecioTotal.Enabled = false;
+            this.txtPrecioTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioTotal.Location = new System.Drawing.Point(659, 389);
+            this.txtPrecioTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioTotal.Name = "txtPrecioTotal";
+            this.txtPrecioTotal.Size = new System.Drawing.Size(118, 26);
+            this.txtPrecioTotal.TabIndex = 50;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(479, 384);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 20);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "Precio total:";
+            // 
+            // btnPrecioTotal
+            // 
+            this.btnPrecioTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnPrecioTotal.FlatAppearance.BorderSize = 0;
+            this.btnPrecioTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPrecioTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecioTotal.ForeColor = System.Drawing.Color.White;
+            this.btnPrecioTotal.Location = new System.Drawing.Point(606, 324);
+            this.btnPrecioTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrecioTotal.Name = "btnPrecioTotal";
+            this.btnPrecioTotal.Size = new System.Drawing.Size(171, 36);
+            this.btnPrecioTotal.TabIndex = 15;
+            this.btnPrecioTotal.Text = "Obtener precio total";
+            this.btnPrecioTotal.UseVisualStyleBackColor = false;
             // 
             // FrmSeleccionarDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 585);
+            this.Controls.Add(this.btnPrecioTotal);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtPrecioTotal);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dateTimePicker2);
@@ -261,5 +320,9 @@
         public System.Windows.Forms.TextBox txtPrecioNoche;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnPrecioTotal;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtPrecioTotal;
+        private System.Windows.Forms.Label label3;
     }
 }

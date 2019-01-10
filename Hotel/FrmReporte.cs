@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Hotel.Control;
+using Hotel.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,17 @@ namespace Hotel
         public FrmReporte()
         {
             InitializeComponent();
+            ReporteGeneral();
         }
 
-        private void FrmReporte_Load(object sender, EventArgs e)
+        public void ReporteGeneral()
         {
-            
+            ReporteControl reporteControl = new ReporteControl();
+            Reporte reporte = reporteControl.MostrarReporteGeneral();
+
+            /*txtNumeroTotalH.Text = reporte.CantidadHuespedes.ToString();
+            txtDineroTotal.Text = reporte.DineroObtenido.ToString();*/
         }
+
     }
 }
